@@ -1,0 +1,93 @@
+/*POLICES*/
+
+h1
+{
+    color: rgba(255, 255, 255, 0.918);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h2
+{
+    color: rgba(255, 255, 255, 0.918);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+}
+
+
+
+/*HEADER*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 150px;
+    /*border: solid;*/
+    background-color: #142654e5;
+    margin: 0px 0px 100px 0px;
+}
+
+
+
+
+
+/*---FIN-HEADER*/
+
+/*SECTION-1*/
+
+.SecCont1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 70vh;
+    border: solid 5px rgb(255, 255, 255);
+    background-color: #142654;
+    margin: 0px 0px 100px 0px;
+}
+
+.ContAccueil 
+{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 30%;
+    height: 70%;
+    border: solid 0.5px rgba(255, 255, 255, 0.192);
+    border-top: solid 0.5px rgba(255, 255, 255, 0);
+    border-bottom: solid 0.5px rgba(255, 255, 255, 0);
+    transition: 1s;
+    margin: 0px 0px 0px 0px ;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    cursor: pointer;
+    
+}
+
+.ContAccueil:hover
+{  
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 50%;
+    border: solid 0.5px rgba(255, 255, 255, 0.192);
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0px 20px 0px 20px ;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+/*FIN-SECTION-1*/
