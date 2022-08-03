@@ -5,12 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/normalizer.css">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="../style/normalizer.css">
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="shortcut icon" type="image/icon" href="favicon.ico" />
-
     <title>PongResult</title>
+    <script src="../javaScript/jquery.js"></script>
+
+    <script>
+        // Appel de la page Acc
+        $(function () {
+            $("#Acc").load("./pages/Acc.html");
+        }); 
+    </script>
+
+
+
 </head>
+
+
+
+
+
 
 
 
@@ -19,8 +34,8 @@
 
     <header>
 
-        <h1><a href="#">PongResult</a></h1>
-        <img src="./img/pexels-magda-ehlers-4080060.jpg" alt="">
+        <h1><a href="../index.html">PongResult</a></h1>
+        <img src="../img/pexels-magda-ehlers-4080060.jpg" alt="">
 
     </header>
 
@@ -41,38 +56,13 @@
 
     </div>
 
+<!--Affiche la page Acc dans l'index-->
+    <div id="Acc"></div>
 
 
-    <section1 class="SecCont1">
-
-
-        <div class="ContAccueil">
-
-            <h2><a href="#">Classement Joueurs</a></h2>
-
-            <img src="./img/pexels-josh-sorenson-976873(1).jpg" alt="">
-
-
-        </div>
-
-        <div class="ContAccueil">
-            <h2><a href="/pages/Resultats.html">Résultats de Match</a></h2>
-
-            <img src="./img/pexels-nikita-nikitin-9074396.jpg" alt="">
-        </div>
-
-        <div class="ContAccueil">
-            <h2><a href="#">Statistiques</a></h2>
-            <img src="./img/pexels-anna-shvets-3846123(1).jpg" alt="">
-        </div>
-
-
-
-    </section1>
-
-<div class="ContEntreSec1Foot">
-    <img class="retoucheImgPong" src="./img/icons8-ping-pong-64.png" alt="">
-</div>
+    <div class="ContEntreSec1Foot">
+        <img class="retoucheImgPong" src="../img/icons8-ping-pong-64.png" alt="">
+    </div>
 
 
     <footer>
@@ -84,7 +74,8 @@
             <p>Association</p>
         </div>
         <div class="ContFoot">
-            <p>Réseaux</p> </div>
+            <p>Réseaux</p>
+        </div>
     </footer>
     <h5>Mention légale | Rgpd | Cookies</h5>
 
