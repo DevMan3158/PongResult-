@@ -90,14 +90,26 @@ Idtable.appendChild(ligne);
         } 
 }
 
-bouton.onclick = () =>{
-    localStorage.setItem("ajoutrang",ajoutrang.value);
-    localStorage.setItem("ajoutclassementO",ajoutclassementO.value);
-    localStorage.setItem("ajoutpoints",ajoutpoints.value);
-    localStorage.setItem("ajoutjoueur",ajoutjoueur.value);
-    localStorage.setItem("ajoutclub",ajoutclub.value);
-    localStorage.setItem("ajoutpays",ajoutpays.value);
-}
+
+const local = JSON.parse(localStorage.getItem("stocker"));
+
+if(local != null);
+
+    bouton.onclick = () => {
+      const stocker ={
+        rang: ajoutrang.value,
+        classement: ajoutclassementO.value,
+        points: ajoutpoints.value,
+        joueur: ajoutjoueur.value,
+        club: ajoutclub.value,
+        pays: ajoutpays.value
+      }  
+    localStorage.setItem("stocker",JSON.stringify(stocker));
+ }
+
+
+
+
 
 
 
