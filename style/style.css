@@ -17,9 +17,21 @@ h2
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     transition: 0.4s;
+    letter-spacing: 2px;
+    
     
     
 
+}
+
+
+h3{
+   
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    transition: 0.4s;
+    letter-spacing: 1px; 
+    margin: 0px 0px 30px 0px; 
 }
 
 h2:hover
@@ -32,6 +44,15 @@ h2:hover
 }
 
 
+h5{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;  
+}
+
+body
+{
+    background-attachment: fixed;
+}
 
 /*HEADER*/
 
@@ -47,7 +68,7 @@ header {
     background-color: #142654e5;
     margin: 0px 0px 0px 0px;
     box-shadow: 2px 4px 12px 1px #000;
-    
+    border: solid 1px rgb(255, 255, 255);
 }
 
 
@@ -99,9 +120,10 @@ li{
     vertical-align: middle;
     width: 100%;
     height: 70vh;
-    border: solid 5px rgb(255, 255, 255);
+    border: solid 1px rgb(255, 255, 255);
     background-color: #142654;
-    margin: 0px 0px 100px 0px;
+    margin: 0px 0px 25px 0px;
+    box-shadow: 2px 4px 12px 1px #000;
 }
 
 .ContAccueil 
@@ -176,3 +198,50 @@ a:hover
 
 
 /*FIN-SECTION-1*/
+
+.ContEntreSec1Foot{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100px;
+margin: 0px 0px 0px 0px;
+ }
+
+.retoucheImgPong
+{
+    width: 70px;
+    height: 70px;
+}
+
+/*Footer*/
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px 0px 0px 0px ;
+    width: 100%;
+    height: 200px;
+    border: solid 1px rgb(255, 255, 255);
+    background-color: #142654;
+}
+
+
+.ContFoot
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 150px;
+    border-bottom: solid 1px;
+}
+
+p{
+    letter-spacing: 2px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration:underline;
+}

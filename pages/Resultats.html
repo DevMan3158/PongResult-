@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/normalizer.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/resultat.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+    <title>PongResult</title>
+</head>
+
+
+
+
+<body>
+
+    <header>
+
+        <h1>PongResult</h1>
+        <img src="../img/pexels-josh-sorenson-976873(1).jpg" alt="">
+
+    </header>
+
+    <div class="conteneurNav">
+
+        <nav>
+            <ul>
+                <li><a class="aLi" href="#">La fédération</a></li>
+                <li><a class="aLi" href="#">Découvrir</a></li>
+                <li><a class="aLi" href="#">Nous contacter</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+ <h4 class="text-center p-3 bg-light">
+        <i class="bi bi-journal-text mt-5"></i>Résultat des matchs 
+    </h4>
+
+    <!--Recherche-->
+    <section class="container mt-5">
+
+    <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+            <label for="recherche" class="col-form-label m-2" style="text-align: right;">Rechercher<i
+                    class="bi bi-search m-1"></i></label>
+        </div>
+        <div class="col-md-auto">
+            <input type="text" class="form-control m-2" id="recherche" name="recherche">
+        </div>
+        <div class="col-md-auto">
+            <button id="bt_find" type="submit" id="find" class="btn btn-dark m-2">Rechercher</button>
+        </div>
+    </div>
+    </section>
+
+    <!--Tableau du classement-->
+    <section class="container mt-5">
+        <table class="table table-light table-striped">
+            <thead>
+                <tr>
+
+
+                    <th scope="col">Tournoi<i class="m-1"></i></th>
+
+                    <th scope="col">Date<i class="m-1"></i></th>
+
+                    <th scope="col">Type<i class="m-1"></i></th>
+
+                    <th scope="col">Nom<i class="bi bi-journal-bookmark m-1"></i></th>
+
+                    <th scope="col">Match</th>
+
+                    <th scope="col">Prénom<i class="bi bi-person-fill m-1"></i></th>
+
+                    <th scope="col">Club<i class="bi bi-people m-1"></i></th>
+
+                    <th scope="col">Pays<i class="bi bi-flag m-1"></i></th>
+
+                    <th scope="col">Durée<i class="bi bi-stopwatch m-1"></i></th>
+
+                    <th scope="col">Prolongation<i class="bi bi-stopwatch-fill m-1"></i><i
+                            class="bi bi-stopwatch-fill m-1"></i></th>
+
+                    <th scope="col">Score<i class="bi bi-trophy m-1"></i></th>
+
+
+                    <th scope="col">
+                        <img src="./img/icons8-modifier.svg" alt="modifier" />
+                    </th>
+                    <th scope="col">
+                        <img src="./img/poubelle.svg" alt="supprimer" />
+                    </th>
+
+                </tr>
+            </thead>
+
+            <tbody id="list_annuaire"></tbody>
+
+        </table>
+    </section>
+
+    <!--Formulaire-->
+    <section class="container mt-5">
+
+        <div class="mb-3 row">
+            <label for="tournoi" class="col-sm-2 col-form-label">Tournoi<i class="bi bi-journal-bookmark m-1"></i>
+            </label>
+            <div class="col-sm-10">
+                <input type="text" id="tournoi" pattern=".{3,}" class="form-control" required />
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="date" class="col-sm-2 col-form-label">Date<i class="bi bi-journal-bookmark m-1"></i>
+            </label>
+            <div class="col-sm-10">
+                <input type="text" id="date" pattern=".{3,}" class="form-control" required />
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="type" class="col-sm-2 col-form-label">Type<i class="bi bi-journal-bookmark m-1"></i>
+            </label>
+            <div class="col-sm-10">
+                <input type="text" id="type" pattern=".{3,}" class="form-control" required />
+            </div>
+        </div>
+
+
+        <div class="mb-3 row">
+            <label for="name" class="col-sm-2 col-form-label">Nom<i class="bi bi-journal-bookmark m-1"></i>
+            </label>
+            <div class="col-sm-10">
+                <input type="text" id="name" pattern=".{3,}" class="form-control" required />
+            </div>
+        </div>
+
+
+        <div class="mb-3 row">
+            <label for="Bat" class="col-sm-2 col-form-label">Match<i class="bi bi-journal-bookmark m-1"></i>
+            </label>
+            <div class="col-sm-10">
+                <input type="text" id="Bat" pattern=".{3,}" class="form-control" required />
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="firstname" class="col-sm-2 col-form-label">Prénom<i class="bi bi-person-fill m-1"></i></label>
+            <div class="col-sm-10">
+                <input type="text" id="firstname" pattern=".{3,}" class="form-control" required />
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="sexe" class="col-sm-2 col-form-label">Sexe<i class="bi bi-signpost-fill m-1"></i>
+            </label>
+            <div class="col-sm-10">
+                <input type="text" id="sexe" pattern=".{3,}" class="form-control" required />
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="club" class="col-sm-2 col-form-label">Club<i class="bi bi-people m-1"></i></label>
+            <div class="col-sm-10">
+                <input type="text" id="club" pattern=".{3,}" class="form-control" required />
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="pays" class="col-sm-2 col-form-label">Pays<i class="bi bi-flag m-1"></i>
+            </label>
+            <div class="col-sm-10">
+                <input type="text" id="pays" pattern=".{3,}" class="form-control" required />
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="duree" class="col-sm-2 col-form-label">Durée<i class="bi bi-stopwatch-fill m-1"></i></label>
+            <div class="col-sm-10">
+                <input type="text" id="duree" pattern=".{3,}" class="form-control" required />
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="prolongation" class="col-sm-2 col-form-label">Prolongation<i class="bi bi-stopwatch m-1"></i><i
+                    class="bi bi-stopwatch m-1"></i></label>
+            <div class="col-sm-10">
+                <input type="text" id="prolongation" pattern=".{3,}" class="form-control" required />
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="score" class="col-sm-2 col-form-label">Score<i class="bi bi-trophy m-1"></i></label>
+            <div class="col-sm-10">
+                <input type="text" id="score" pattern=".{3,}" class="form-control" required />
+            </div>
+        </div>
+
+
+       <!--Validation--> 
+
+        <div class="d-flex justify-content-center">
+            <button id="valider" type="button" class="btn btn-dark m-1">
+                Valider
+            </button>
+            <button id="annuler" type="button" class="btn btn-dark m-1">
+                Annuler
+            </button>
+        </div>
+
+    </section>
+
+
+
+<!--Sauvegarder-->
+<section class="container mt-5">
+    <div class="d-flex justify-content-center m-2">
+        <input type="file" id="fileToUpload" value="Import">
+        <label for="fileToUpload" type="button" class="btn btn-dark m-1">
+            Récupérer
+        </label>
+        <button id="save" type="button" class="btn btn-dark m-1">
+            Sauvegarder
+        </button>
+    </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+<script src="/javaScript/annuaire.js"></script>
+
+   <!-- <table>
+        <thead>
+            <tr>
+                <th> Numéro </th>
+                <th> Joueur </th>
+                <th> Sexe </th>
+                <th> Pays </th>
+                <th> Durée </th>
+                <th> Prolongation </th>
+                <th> Score </th>
+            </tr>
+        </thead>
+        
+        <tbody >
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+
+    </table>-->
+
+    <body>
+
+</html>
