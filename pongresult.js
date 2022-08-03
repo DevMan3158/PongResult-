@@ -1,4 +1,4 @@
-/*ajouter un match*/
+/*ajouter un résultat de match*/
 function AddElement(event) {
        {
     event.preventDefault();
@@ -90,11 +90,10 @@ Idtable.appendChild(ligne);
         } 
 }
 
-
+/*localstorage avec données alignées*/
 const local = JSON.parse(localStorage.getItem("stocker"));
 
 if(local != null);
-
     bouton.onclick = () => {
       const stocker ={
         rang: ajoutrang.value,
