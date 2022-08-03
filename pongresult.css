@@ -24,6 +24,3 @@ td, th
 th{
     font-size: 200%;
 }
-td{
-    filter: blur(2px);
-}

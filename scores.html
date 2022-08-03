@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tableau des scores </title>
+</head>
+<body>
+
+    <h2> Détail des scores par joueur </h4>
+    
+<div class="container2">  
+<table id="ScoreJoueurA">
+    <tr>
+    <td>
+        <label class="dateMatch" for="date"></label>
+        Date<input type="text" id="date" name="dateM" placeholder="Format jj/mm/aaaa" >   
+    </td>
+    <td>
+        <label class="evento" for="lieu"></label>
+        Lieu<input type="text" id="lieu" name="lieuM" placeholder="Ville (00)" >   
+    </td>
+    </tr>
+        <tr>
+            <td>
+                <label class="nomJoueur" for="joueurA"></label>
+                Joueur<input type="text" id="joueurA" name="joueurA" placeholder="Nom du joueur" >   
+            </td>
+            <td>
+            <form oninput="resultJoueur.value=parseInt(set4.value)+parseInt(set3.value)+parseInt(set2.value)+parseInt(set1.value)">
+                set4<input type="number" name="set4" placeholder="set4" />
+                set3<input type="number" name="set3" placeholder="set3" />
+                set2<input type="number" name="set2" placeholder="set2" />
+                set1<input type="number" name="set1" placeholder="set1" />
+                total<output name="resultJoueur" placeholder="totalJoueur" ></output>
+            </form>
+            </td>
+        </tr>
+</table>
+<table id="ScoreJoueurB">
+    <tr>
+            <tr>
+                <td>
+                    <label class="nomJoueur" for="joueurA"></label>
+                    Joueur<input type="text" id="joueurA" name="joueurA" placeholder="Joueur" >   
+                </td>
+        <td>
+        <form oninput="resultJoueur.value=parseInt(set4.value)+parseInt(set3.value)+parseInt(set2.value)+parseInt(set1.value)">
+            set4<input type="number" name="set4" placeholder="set4" />
+            set3<input type="number" name="set3" placeholder="set3" />
+            set2<input type="number" name="set2" placeholder="set2" />
+            set1<input type="number" name="set1" placeholder="set1" />
+            total<output name="resultJoueur" placeholder="totalJoueur" ></output>
+        </form>
+        </td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
