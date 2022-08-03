@@ -11,7 +11,6 @@ function addRow(data) {
    '<td class="tournoi">'+data.tournoi+'</td>'+
     '<td class="date">'+data.date+'</td>'+
     '<td class="type">'+data.type+'</td>'+
-
     '<td class="name">'+data.name+'</td>'+
     '<td class="Bat">'+data.Bat+'</td>'+
     '<td class="firstname">'+data.firstname+'</td>'+

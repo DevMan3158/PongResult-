@@ -9,78 +9,48 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="shortcut icon" type="image/icon" href="favicon.ico" />
     <title>PongResult</title>
-    <script src="../javaScript/jquery.js"></script>
-
-    <script>
-        // Appel de la page Acc
-        $(function () {
-            $("#Acc").load("./pages/Acc.html");
-        }); 
-    </script>
-
-
-
 </head>
-
-
-
-
-
-
-
 
 
 <body>
 
-    <header>
 
-        <h1><a href="../index.html">PongResult</a></h1>
-        <img src="../img/pexels-magda-ehlers-4080060.jpg" alt="">
-
-    </header>
+<!--Affiche la page Head, Acc, Foot dans l'index
+    -->
 
 
-    <div class="conteneurNav">
+    <div id="Head"></div>
 
-        <nav>
-            <ul>
-                <li><a class="aLi" href="#">La fédération, règlements</a></li>
-                <li><a class="aLi" href="#">Comptétition</a></li>
-                <li><a class="aLi" href="#">Documentation</a></li>
-            </ul>
-
-
-
-        </nav>
-
-
-    </div>
-
-<!--Affiche la page Acc dans l'index-->
     <div id="Acc"></div>
 
-
-    <div class="ContEntreSec1Foot">
-        <img class="retoucheImgPong" src="../img/icons8-ping-pong-64.png" alt="">
-    </div>
+    <div id="Foot"></div>
 
 
-    <footer>
-
-        <div class="ContFoot">
-            <p>Contact</p>
-        </div>
-        <div class="ContFoot">
-            <p>Association</p>
-        </div>
-        <div class="ContFoot">
-            <p>Réseaux</p>
-        </div>
-    </footer>
-    <h5>Mention légale | Rgpd | Cookies</h5>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="../javaScript/jquery.js"></script>
+    <script>
 
 
 
+        //Appel du contenue Header
+
+        $(function () {
+            $("#Head").load("./pages/Header.html");
+        });
+
+         //Appel de la page Acc
+
+        $(function () {
+            $("#Acc").load("./pages/Acc.html");
+        }); 
+        //Appel du contenue Footer
+
+        $(function () {
+            $("#Foot").load("./pages/Footer.html");
+        });
+
+    </script>
+    
 </body>
 
 </html>

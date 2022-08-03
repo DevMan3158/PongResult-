@@ -1,23 +1,22 @@
-    <h4>
-        Résultat des matchs
-    </h4>
+<link rel="stylesheet" href="../style/normalizer.css">
+<link rel="stylesheet" href="../style/style.css">
+<link rel="stylesheet" href="../style/resultat.css">
+    
+    <h4>Résultat des matchs</h4>
 
     <!--Recherche-->
 
-
-    <div>
-        <div>
+  
             <label for="recherche">Rechercher</label>
-        </div>
-        <div>
+   
             <input type="text" id="recherche" name="recherche">
-        </div>
-        <div>
+       
             <button id="bt_find" type="submit" id="find">Rechercher</button>
-        </div>
-    </div>
+      
 
     <!--Fin-Recherche-->
+
+
 
     <!--Tableau du classement-->
 
@@ -28,7 +27,7 @@
 
                 <th>Tournoi</th>
 
-                <th>Date></th>
+                <th>Date</th>
 
                 <th>Type</th>
 
@@ -65,9 +64,9 @@
  
     <!--Fin-Tableau-du-classement-->
 
-    <!--Formulaire-->
 
 
+    <!--Formulaire
 
     <label for="tournoi">Tournoi</label>
 
@@ -148,30 +147,27 @@
 
     <label for="score">Score</label>
 
-    <input type="text" id="score" pattern=".{3,}" required />
-
+    <input type="text" id="score" pattern=".{3,}" required />-->
 
     <!--Fin-Formulaire-->
 
 
+
     <!--Validation-->
 
-   
         <button id="valider" type="button" >
             Valider
         </button>
         <button id="annuler" type="button" >
             Annuler
         </button>
-    </div>
-
-    </section>
 
     <!--Fin-Validation-->
 
+
+
     <!--Sauvegarder-->
     
-      
             <input type="file" id="fileToUpload" value="Import">
             <label for="fileToUpload" type="button" >
                 Récupérer
@@ -182,8 +178,4 @@
 
     <!--Fin-Sauvegarder-->
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-    <script src="/javaScript/annuaire.js"></script>
+    <script src="../javaScript/annuaire.js"></script>

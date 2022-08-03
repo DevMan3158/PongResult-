@@ -1,7 +1,8 @@
-/*table
+table
 {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     border: solid black;
     width: 100%;
@@ -23,4 +24,33 @@ th
     padding: 0px 20px 0px 20px ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     
-}*/
+}
+
+td
+{
+    border: solid 1px #14265456;
+    color: #303030;
+    margin: 0px 15px 0px 15px ;
+    padding: 0px 20px 0px 20px ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label
+{
+    border: solid 1px #14265456;
+}
+
+button
+{
+    border: solid 1px #14265456;
+}
+
+input
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border: solid 1px #14265456;
+}

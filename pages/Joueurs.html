@@ -9,18 +9,6 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="shortcut icon" type="image/icon" href="favicon.ico" />
     <title>PongResult</title>
-    <script src="../javaScript/jquery.js"></script>
-    
-    <script>
-        // Appel de l'index 
-        $(function () {
-            $("#Ind").load("../index.html");
-        }); 
-
-        $(function () {
-            $("#Res").load("../pages/Resultats.html");
-        }); 
-    </script>
 
 
 
@@ -30,14 +18,43 @@
 <body>
 
 
-<!--Affiche l'index-->
+    <!--Affiche la page Acc dans l'index-->
 
-    <div id="Ind"></div>
 
-    
+    <div id="Head"></div>
+
     <div id="Res"></div>
-    
 
+    <div id="Foot"></div>
+
+
+
+    <script src="../javaScript/jquery.js"></script>
+
+    <script>
+        
+        $(function () {
+            $("#Res").load("../pages/Resultats.html");
+        });
+
+        //Appel du contenue Header
+
+        $(function () {
+            $("#Head").load("../pages/Header.html");
+        });
+
+        //Appel du contenue Footer
+
+        $(function () {
+            $("#Foot").load("../pages/Footer.html");
+        });
+
+        /*$(function () {
+            $("#Res").load("../pages/Resultats.html");
+        }); */
+
+
+    </script>
 </body>
 
 </html>
