@@ -1,4 +1,4 @@
-
+/*ajouter un match*/
 function AddElement(event) {
        {
     event.preventDefault();
@@ -89,5 +89,24 @@ Idtable.appendChild(ligne);
     Idtable.appendChild(ligne);
         } 
 }
+
+bouton.onclick = () =>{
+    localStorage.setItem("ajoutrang",ajoutrang.value);
+    localStorage.setItem("ajoutclassementO",ajoutclassementO.value);
+    localStorage.setItem("ajoutpoints",ajoutpoints.value);
+    localStorage.setItem("ajoutjoueur",ajoutjoueur.value);
+    localStorage.setItem("ajoutclub",ajoutclub.value);
+    localStorage.setItem("ajoutpays",ajoutpays.value);
+}
+
+
+
+
+
+
+
+
+
+
 
 
