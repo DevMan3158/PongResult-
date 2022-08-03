@@ -1,2 +1,2 @@
 # PongResult-
-Site en Javascript - Réaliser avec en duo au sein d'Online Forma Pro - Nevers
+Site en Javascript - Réaliser en duo au sein d'Online Forma Pro - Nevers
