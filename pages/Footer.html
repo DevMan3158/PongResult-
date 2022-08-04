@@ -55,4 +55,102 @@
     </div>
 </footer>
 
-<h5>© PongResult | Mentions légales | Rgpd | Cookies |  Admin</h5>
+<h5>© PongResult | Mentions légales | Rgpd |  Admin</h5>
+<dialog id="favDialog">
+
+    <form method="dialog">
+        <h3>Bienvenue dans l'espace de gestion de vos données personnelles</h3>
+
+
+        <p><span class="spanP">  Conformément à vos choix, certains partenaires et nous pouvons accéder à votre terminal
+            pour vous reconnaître via des traceurs comme les cookies, collecter, stocker, croiser,
+            et transférer des données comme vos adresses IP et email, vos paramètres de logiciels,
+            votre navigation ou votre localisation, à ces fins : Publicités standards et mesure de
+            performance des publicités, Profil de publicités personnalisées et affichage,
+            Contenu personnalisé et Mesure de performance du contenu, données d’audience, et développement produit.
+        </span></p> <br><br>
+        <p> <span class="spanP">Nous vous en remercions et vous proposons d'appliquer vos choix à ces partenaires également.
+            Vous pouvez bien sur refuser leurs traceurs et traitements en cliquant sur "Ne pas appliquer",
+            et en savoir plus, faire un choix plus granulaire ou vous opposer aux traitements basés sur des
+            intérêts légitimes, ou modifier vos choix actuels et retirer votre consentement via
+            l'écran de paramétrage, ou à tout moment via la Politique de vie privée.
+            Vos choix s'appliqueront sur ce site et nos emails pendant 6 mois,
+            et nous ne vous solliciterons plus avant 10 jours.</span></p>
+
+        <label> Contenu personnalisé :
+
+
+            <select>
+
+                
+                
+                <option>Activer</option>
+                <option>Désativer</option>
+              
+            </select>
+
+        </label>
+
+
+        <label> Publicité standard :
+
+
+            <select>
+
+                
+                
+                <option>Activer</option>
+                <option>Désativer</option>
+              
+            </select>
+
+        </label>
+
+
+        <label> Publicité personnalisée :
+
+
+            <select>
+
+                
+                
+                <option>Activer</option>
+                <option>Désativer</option>
+              
+            </select>
+
+        </label>
+
+
+
+        <label> Mesure d'audience :
+
+
+            <select>
+
+                
+                <!--<option> Laisser vide</option>-->
+                <option>Activer</option>
+                <option>Désativer</option>
+              
+            </select>
+
+        </label>
+
+
+        <menu>
+            <button value="annuler">Ne pas appliquer&nbsp;</button>
+            <span class="spanBTN"><button id="confirmer" value="default">Appliquer mes choix</button></span>
+        </menu>
+
+    </form>
+
+</dialog>
+
+<menu>
+    <button id="modifier">Cookies</button>
+</menu>
+
+<output aria-live="polite"></output>
+
+<script src="./javaScript/dialog.js"></script>
