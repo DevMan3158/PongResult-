@@ -18,7 +18,7 @@ updateButton.addEventListener('click', function onOpen()
   }
 });
 
-// L'entrée "Animal favori" définit la valeur du bouton d'envoi.
+// L'entrée définit la valeur du bouton d'envoi.
 selectEl.addEventListener('change', function onSelect(e) {
   confirmBtn.value = selectEl.value;
 });
