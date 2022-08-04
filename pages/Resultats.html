@@ -1,181 +1,139 @@
 <link rel="stylesheet" href="../style/normalizer.css">
 <link rel="stylesheet" href="../style/style.css">
 <link rel="stylesheet" href="../style/resultat.css">
+
+<h4>Résultat des matchs</h4>
+
+<!--Recherche-->
+
+<div class="ContRecherche">
+
+    <label for="recherche">Rechercher</label>
+
+    <input type="text" id="recherche" name="recherche">
+
+    <button id="bt_find" type="submit" id="find">Rechercher</button>
     
-    <h4>Résultat des matchs</h4>
+</div>
 
-    <!--Recherche-->
-
-  
-            <label for="recherche">Rechercher</label>
-   
-            <input type="text" id="recherche" name="recherche">
-       
-            <button id="bt_find" type="submit" id="find">Rechercher</button>
-      
-
-    <!--Fin-Recherche-->
+<!--Fin-Recherche-->
 
 
 
-    <!--Tableau du classement-->
+<!--Tableau du classement-->
 
-    <table>
-        <thead>
-            <tr>
-
-
-                <th>Tournoi</th>
-
-                <th>Date</th>
-
-                <th>Type</th>
-
-                <th>Nom</th>
-
-                <th>Match</th>
-
-                <th>Prénom</th>
-
-                <th>Club</th>
-
-                <th>Pays</th>
-
-                <th>Durée</th>
-
-                <th>Prolongation</th>
-
-                <th>Score</th>
+<table>
+    <thead>
+        <tr>
 
 
-                    <th>
-                        <img src="./img/icons8-modifier.svg" alt="modifier" />
+            <th>Tournoi</th>
+
+            <th>Date</th>
+
+            <th>Type</th>
+
+            <th>Nom</th>
+
+            <th>Match</th>
+
+            <th>Prénom</th>
+
+            <th>Club</th>
+
+            <th>Pays</th>
+
+            <th>Durée</th>
+
+            <th>Prolongation</th>
+
+            <th>Score</th>
+
+
+            <!-- <th>
+                        <img src="./img/icons8-modifier.svg" alt="" />
                     </th>
                     <th>
-                        <img src="./img/poubelle.svg" alt="supprimer" />
-                    </th>
+                        <img src="./img/poubelle.svg" alt="" />
+                    </th>-->
 
-            </tr>
-        </thead>
+        </tr>
+    </thead>
 
-        <tbody id="list_annuaire"></tbody>
+    <tbody id="list_annuaire"></tbody>
 
-    </table>
- 
-    <!--Fin-Tableau-du-classement-->
+</table>
+
+<!--Fin-Tableau-du-classement-->
 
 
 
-    <!--Formulaire
+<!--Formulaire
 
     <label for="tournoi">Tournoi</label>
-
     <input type="text" id="tournoi" pattern=".{3,}" required />
 
-
-
-
     <label for="date">Date</label>
-
     <input type="text" id="date" pattern=".{3,}" required />
 
-
-
-
     <label for="type">Type</label>
-
     <input type="text" id="type" pattern=".{3,}" required />
 
-
-
-
-
     <label for="name">Nom</label>
-
     <input type="text" id="name" pattern=".{3,}" required />
 
-
-
-
-
     <label for="Bat">Match</label>
-
     <input type="text" id="Bat" pattern=".{3,}" required />
 
-
-
-
     <label for="firstname">Prénom</label>
-
     <input type="text" id="firstname" pattern=".{3,}" required />
 
-
-
-
     <label for="sexe">Sexe</label>
-
     <input type="text" id="sexe" pattern=".{3,}" required />
 
-
-
-
     <label for="club">Club</label>
-
     <input type="text" id="club" pattern=".{3,}" required />
 
-
-
-
     <label for="pays">Pays</label>
-
     <input type="text" id="pays" pattern=".{3,}" required />
 
-
-
     <label for="duree">Durée</label>
-
     <input type="text" id="duree" pattern=".{3,}" required />
 
-
-
-
-    <label for="prolongation">Prolongation<i class="bi bi-stopwatch m-1"></label>
-
+    <label for="prolongation">Prolongation></label>
     <input type="text" id="prolongation" pattern=".{3,}" required />
 
-
-
     <label for="score">Score</label>
-
     <input type="text" id="score" pattern=".{3,}" required />-->
 
-    <!--Fin-Formulaire-->
+<!--Fin-Formulaire-->
 
 
 
-    <!--Validation-->
-
-        <button id="valider" type="button" >
-            Valider
-        </button>
-        <button id="annuler" type="button" >
-            Annuler
-        </button>
-
-    <!--Fin-Validation-->
+<!--Validation-->
 
 
 
-    <!--Sauvegarder-->
-    
-            <input type="file" id="fileToUpload" value="Import">
-            <label for="fileToUpload" type="button" >
-                Récupérer
-            </label>
-            <button id="save" type="button" >
-                Sauvegarder
-            </button>
+<!--Fin-Validation-->
 
-    <!--Fin-Sauvegarder-->
 
-    <script src="../javaScript/annuaire.js"></script>
+
+<!--Sauvegarder-->
+<div class="ContRecherche">
+    <input type="file" id="fileToUpload" value="Import">
+    <label for="fileToUpload" type="button">
+        Récupérer
+    </label>
+    <button id="save" type="button">
+        Sauvegarder
+    </button>
+</div>
+
+
+<button id="valider" type="button"><!--valider--></button>
+
+<button id="annuler" type="button"><!--annuler--></button>
+
+<!--Fin-Sauvegarder-->
+
+<script src="../javaScript/annuaire.js"></script>
