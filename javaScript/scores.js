@@ -1,3 +1,10 @@
+/*onglets*/
+$( function() {
+  $( "#tabs" ).tabs();
+} );
+
+
+
 /*flouter*/
 $( "#jA" ).first().click(function() {
     $( this ).fadeTo( "slow", 0.33 );
