@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/normalizer.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" type="image/icon" href="favicon.ico" />
+    <title>PongResult</title>
+
+
+
+</head>
+
+
+<body>
+
+    <!--Affiche le contenue de la page Header-->
+    <div id="Head"></div>
+
+    <div class="ContBandPageSv">
+
+        <div class="BandPageSv">
+
+            <a href="../index.html"><img class="retouchSvg" src="/img/icons8-accueil.svg" alt="Home"></a><li> > Accueil > Statistiques</li>
+        
+        </div>
+
+
+    </div>
+    <!--Affiche le contenue de la page résultats (Formulaire) dans résultats (Pages)-->
+
+    <div id="Sco"></div>
+    <!--Affiche le contenue de la page Footer-->
+    <div id="Foot"></div>
+
+
+
+    <script src="../javaScript/jquery.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+
+    <script>
+
+        //Appel du contenue score
+
+        $(function () {
+            $("#Sco").load("../Formulaire/scores.html");
+        });
+
+        //Appel du contenue Header
+
+        $(function () {
+            $("#Head").load("../pages/Header.html");
+        });
+
+        //Appel du contenue Footer
+
+        $(function () {
+            $("#Foot").load("../pages/Footer.html");
+        });
+
+
+    </script>
+    
+    
+</body>
+
+</html>

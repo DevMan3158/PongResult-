@@ -1,0 +1,102 @@
+/*POLICES*/
+
+h4
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+/*FIN-POLICES*/
+
+
+
+
+.ContRecherche
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid black;
+    margin: 50px 0px 50px 0px;
+}
+
+
+table
+{
+    /*: solid black;*/
+    margin: 100px 0px 100px 0px;
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 20px 0px 20px ;
+    filter: drop-shadow(3px 2px 4px rgba(0, 0, 0, 0.445));
+}
+
+
+
+tr
+{
+    /*border: solid rgb(0, 0, 0);*/
+    background-color: #f1f1f1;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+
+th
+{
+    /*border: solid 1px #142654a1;*/
+    background-color: #f1f1f1;
+    color: #222222;
+    margin: 0px 15px 0px 15px ;
+    padding: 0px 20px 0px 20px ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+td
+{
+    border: solid 1px #14265456;
+    background-color: #142654d0 ;
+    color: #ffffff;
+    margin: 0px 15px 0px 15px ;
+    padding: 0px 20px 0px 20px ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+label
+{
+    border: solid 1px #14265456;
+    margin: 0px 0px 0px 0px ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+button
+{
+  
+    border: solid 1px #14265456;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+input
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px #14265456;
+    margin: 20px 0px 20px 0px ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
