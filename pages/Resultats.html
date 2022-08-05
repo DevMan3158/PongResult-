@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/normalizer.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" type="image/icon" href="favicon.ico" />
+    <title>PongResult</title>
+
+
+
+</head>
+
+
+<body>
+
+
+    <!--Affiche la page Acc dans l'index-->
+
+
+    <div id="Head"></div>
+
+    <div class="ContBandPageSv">
+
+        <div class="BandPageSv">
+
+            <a href="../index.html"><img class="retouchSvg" src="/img/icons8-accueil.svg" alt="Home"></a><li> > Accueil > Résultats de Match</li>
+        
+        </div>
+
+
+    </div>
+
+    <div id="Res"></div>
+
+    <div id="Foot"></div>
+
+
+
+    <script src="../javaScript/jquery.js"></script>
+
+    <script>
+
+        $(function () {
+            $("#Res").load("../Formulaire/Resultats.html");
+        });
+
+        //Appel du contenue Header
+
+        $(function () {
+            $("#Head").load("../pages/Header.html");
+        });
+
+        //Appel du contenue Footer
+
+        $(function () {
+            $("#Foot").load("../pages/Footer.html");
+        });
+
+    </script>
+    
+    
+</body>
+
+</html>
