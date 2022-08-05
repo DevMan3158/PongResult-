@@ -2,6 +2,7 @@
 $( function() {
   $( "#tabs" ).tabs();
 } );
+
 /*flouter*/
 $( "#jA" ).first().click(function() {
     $( "#jB" ).fadeTo( "slow", 0.33 );
@@ -21,6 +22,7 @@ $( "#b2").first().click(function() {
 $( "#b2").first().click(function() {
     $( '#jB').fadeTo( "slow", 1 );
   });   
+  
 /*graphique*/
 const graph = document.getElementById("graph").getContext("2d");
 
