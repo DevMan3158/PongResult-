@@ -6,28 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="scores.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <script type="text/javascript" src="scores.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <title> Tableau des scores </title>
 </head>
 
 <body>
-
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">tableau des scores</a></li>
+        <li><a href="#tabs-2">page2</a></li>
+        <li><a href="#tabs-3">page3</a></li>
+      </ul>
+    <div id="tabs-1">
+        <p>
     <h2> Détail des scores par joueur </h4>
-<br>
-<br>
-<br>
+        <br>
+        <br>
+        <br>
         <canvas id="graph"></canvas>
-<br>
-<br>
-<br>
-<br>
-<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="container2">
             <table>
+<!--boutons flouter/visible-->
                 <div>
                     &nbsp;&nbsp;<button id="bouton" value="submit">Ajouter</button>&nbsp;
-                    <button id="b1" value="submit">Flouter</button>&nbsp;
+                    <button id="b1" value="submit">Flouter tout</button>&nbsp;
                     <button id="b2" value="submit">Visible</button>
                 </div>
                 <br>
@@ -57,8 +68,7 @@
                                 set3<input type="number" id="set3" name="set3" placeholder="set3" />&nbsp;
                                 set2<input type="number" id="set2" name="set2" placeholder="set2" />&nbsp;
                                 set1<input type="number" id="set1" name="set1" placeholder="set1" />
-                                &nbsp; = &nbsp; <output name="resultJoueurA"
-                                    placeholder="totalJoueur"></output>&nbsp;&nbsp;
+                                &nbsp; = &nbsp; <output name="resultJoueurA" placeholder="totalJoueur"></output>&nbsp;&nbsp;
                             </form>
                         </td>
                     </tr>
@@ -85,7 +95,17 @@
                 </table>
             </table>
         </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+            integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</p>
+<div id="tabs-2">
+    <p></p>
+  </div>
+  <div id="tabs-3">
+    <p></p>
+    <p></p>
+  </div>
+</div>
 </body>
-
 </html>

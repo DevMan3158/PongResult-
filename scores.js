@@ -1,11 +1,14 @@
+/*onglets*/
+$( function() {
+  $( "#tabs" ).tabs();
+} );
 /*flouter*/
 $( "#jA" ).first().click(function() {
-    $( this ).fadeTo( "slow", 0.33 );
+    $( "#jB" ).fadeTo( "slow", 0.33 );
   });
 $( "#jB" ).first().click(function() {
-    $( this ).fadeTo( "slow", 0.33 );
+    $( "#jA" ).fadeTo( "slow", 0.33 );
   }); 
-
 $( "#b1").first().click(function() {
     $( '#jA').fadeTo( "slow", 0.3 );
   });   
@@ -18,7 +21,6 @@ $( "#b2").first().click(function() {
 $( "#b2").first().click(function() {
     $( '#jB').fadeTo( "slow", 1 );
   });   
-
 /*graphique*/
 const graph = document.getElementById("graph").getContext("2d");
 
@@ -43,7 +45,7 @@ let myChart = new Chart(graph, {
             "orange",
             "yellow",
         ],
-        hoverBorderWidth: 3,
+        hoverBorderWidth: 30,
         },
     ],
     },
