@@ -1,4 +1,5 @@
-/*ajouter un résultat de match*/
+/*Ajouter un résultat de match*/
+
 function AddElement(event) {
   {
     event.preventDefault();
@@ -16,6 +17,7 @@ function AddElement(event) {
 
     Idtable.appendChild(ligne);
   }
+
   {
     event.preventDefault();
     let IdElement = document.getElementById("ajoutclassementO");
@@ -31,6 +33,7 @@ function AddElement(event) {
 
     Idtable.appendChild(ligne);
   }
+
   {
     event.preventDefault();
     let IdElement = document.getElementById("ajoutpoints");
@@ -44,6 +47,7 @@ function AddElement(event) {
 
     Idtable.appendChild(ligne);
   }
+
   {
     event.preventDefault();
 
@@ -60,6 +64,7 @@ function AddElement(event) {
 
     Idtable.appendChild(ligne);
   }
+
   {
     event.preventDefault();
     let IdElement = document.getElementById("ajoutclub");
@@ -75,6 +80,7 @@ function AddElement(event) {
 
     Idtable.appendChild(ligne);
   }
+
   {
     event.preventDefault();
     let IdElement = document.getElementById("ajoutpays");

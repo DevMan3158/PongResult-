@@ -1,0 +1,61 @@
+
+    <link rel="stylesheet" href="pongresult.css">
+    <link rel="stylesheet" href="../style/normalizer.css">
+    <link rel="stylesheet" href="../style/resultat.css">
+   
+   
+    <script type="text/javascript" src="javaScript/pongresult.js" defer></script>
+</head>
+
+
+<body id="body">
+      
+
+    <div class="container">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th> &nbsp; Rang &nbsp; </th>
+                    <th> &nbsp; Classement officiel &nbsp; </th>
+                    <th> &nbsp; Points &nbsp; </th>
+                    <th> &nbsp; Joueur &nbsp; </th>
+                    <th> &nbsp; Club &nbsp; </th>
+                    <th> &nbsp; Pays &nbsp; </th>
+                </tr>
+            </thead>
+              
+            <form id="formulAjout" name="formulaire" onsubmit="AddElement(event);">                
+                    <td>
+                        <label class="rang" for="ajoutrang"></label>
+                        <input type="text" id="ajoutrang" name="ajouterrang">
+                    </td>
+                    <td>
+                        <label class="classementO" for="ajoutclassementO"></label>
+                        <input type="text" id="ajoutclassementO" name="ajouterclassementO">
+                    </td>
+                    <td>
+                        <label class="points" for="ajoutpoints"></label>
+                        <input type="text" id="ajoutpoints" name="ajouterpoints">
+                    </td>
+                    <td>
+                        <label class="joueur" for="ajoutjoueur"></label>
+                        <input type="text" id="ajoutjoueur" name="ajouterjoueur">
+                    </td>
+                    <td>
+                        <label class="club" for="ajoutclub"></label>
+                        <input type="text" id="ajoutclub" name="ajouterclub">
+                    </td>
+                    <td>
+                        <label class="pays" for="ajoutpays"></label>
+                        <input type="text" id="ajoutpays" name="ajouterpays">
+                    </td>
+        
+                    <td>
+                        <button id="bouton" value="submit" >Ajouter</button>
+                    </td>           
+            </form>
+           
+        </table>
+    </div>
+    
+</body>
