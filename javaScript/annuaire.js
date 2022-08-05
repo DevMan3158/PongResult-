@@ -19,9 +19,9 @@ function addRow(data) {
     '<td class="duree">'+data.duree+'</td>'+
     '<td class="prolongation">'+data.prolongation+'</td>'+
     '<td class="score">'+data.score+'</td>'+
-    //Boucle modifier et supprimer à changer, conflit sur affichage 
-   /* '<th scope="col"><img src="./img/icons8-modifier.svg" class="modif" alt="modifier" /></th>'+
-    '<th scope="col"><img src="./img/poubelle.svg" class="delete" alt="supprimer" /></th>'+*/
+
+    '<th scope="col"><img src="./img/icons8-modifier.svg" class="modif" alt="modifier" /></th>'+
+    '<th scope="col"><img src="./img/poubelle.svg" class="delete" alt="supprimer" /></th>'+
     '</tr>';
 }
 

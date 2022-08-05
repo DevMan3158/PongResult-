@@ -1,139 +1,68 @@
-<link rel="stylesheet" href="../style/normalizer.css">
-<link rel="stylesheet" href="../style/style.css">
-<link rel="stylesheet" href="../style/resultat.css">
+<!DOCTYPE html>
+<html lang="fr">
 
-<h4>Résultat des matchs</h4>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/normalizer.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" type="image/icon" href="favicon.ico" />
+    <title>PongResult</title>
 
-<!--Recherche-->
 
-<div class="ContRecherche">
 
-    <label for="recherche">Rechercher</label>
+</head>
 
-    <input type="text" id="recherche" name="recherche">
 
-    <button id="bt_find" type="submit" id="find">Rechercher</button>
+<body>
+
+
+    <!--Affiche la page Acc dans l'index-->
+
+
+    <div id="Head"></div>
+
+    <div class="ContBandPageSv">
+
+        <div class="BandPageSv">
+
+            <a href="../index.html"><img class="retouchSvg" src="/img/icons8-accueil.svg" alt="Home"></a><li> > Accueil > Résultats de Match</li>
+        
+        </div>
+
+
+    </div>
+
+    <div id="Res"></div>
+
+    <div id="Foot"></div>
+
+
+
+    <script src="../javaScript/jquery.js"></script>
+
+    <script>
+
+        $(function () {
+            $("#Res").load("../Formulaire/Resultats.html");
+        });
+
+        //Appel du contenue Header
+
+        $(function () {
+            $("#Head").load("../pages/Header.html");
+        });
+
+        //Appel du contenue Footer
+
+        $(function () {
+            $("#Foot").load("../pages/Footer.html");
+        });
+
+    </script>
     
-</div>
+    
+</body>
 
-<!--Fin-Recherche-->
-
-
-
-<!--Tableau du classement-->
-
-<table>
-    <thead>
-        <tr>
-
-
-            <th>Tournoi</th>
-
-            <th>Date</th>
-
-            <th>Type</th>
-
-            <th>Nom</th>
-
-            <th>Match</th>
-
-            <th>Prénom</th>
-
-            <th>Club</th>
-
-            <th>Pays</th>
-
-            <th>Durée</th>
-
-            <th>Prolongation</th>
-
-            <th>Score</th>
-
-
-            <!-- <th>
-                        <img src="./img/icons8-modifier.svg" alt="" />
-                    </th>
-                    <th>
-                        <img src="./img/poubelle.svg" alt="" />
-                    </th>-->
-
-        </tr>
-    </thead>
-
-    <tbody id="list_annuaire"></tbody>
-
-</table>
-
-<!--Fin-Tableau-du-classement-->
-
-
-
-<!--Formulaire
-
-    <label for="tournoi">Tournoi</label>
-    <input type="text" id="tournoi" pattern=".{3,}" required />
-
-    <label for="date">Date</label>
-    <input type="text" id="date" pattern=".{3,}" required />
-
-    <label for="type">Type</label>
-    <input type="text" id="type" pattern=".{3,}" required />
-
-    <label for="name">Nom</label>
-    <input type="text" id="name" pattern=".{3,}" required />
-
-    <label for="Bat">Match</label>
-    <input type="text" id="Bat" pattern=".{3,}" required />
-
-    <label for="firstname">Prénom</label>
-    <input type="text" id="firstname" pattern=".{3,}" required />
-
-    <label for="sexe">Sexe</label>
-    <input type="text" id="sexe" pattern=".{3,}" required />
-
-    <label for="club">Club</label>
-    <input type="text" id="club" pattern=".{3,}" required />
-
-    <label for="pays">Pays</label>
-    <input type="text" id="pays" pattern=".{3,}" required />
-
-    <label for="duree">Durée</label>
-    <input type="text" id="duree" pattern=".{3,}" required />
-
-    <label for="prolongation">Prolongation></label>
-    <input type="text" id="prolongation" pattern=".{3,}" required />
-
-    <label for="score">Score</label>
-    <input type="text" id="score" pattern=".{3,}" required />-->
-
-<!--Fin-Formulaire-->
-
-
-
-<!--Validation-->
-
-
-
-<!--Fin-Validation-->
-
-
-
-<!--Sauvegarder-->
-<div class="ContRecherche">
-    <input type="file" id="fileToUpload" value="Import">
-    <label for="fileToUpload" type="button">
-        Récupérer
-    </label>
-    <button id="save" type="button">
-        Sauvegarder
-    </button>
-</div>
-
-
-<button id="valider" type="button"><!--valider--></button>
-
-<button id="annuler" type="button"><!--annuler--></button>
-
-<!--Fin-Sauvegarder-->
-
-<script src="../javaScript/annuaire.js"></script>
+</html>
