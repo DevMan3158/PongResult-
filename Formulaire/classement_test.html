@@ -1,0 +1,132 @@
+
+    <link rel="stylesheet" href="../style/normalizer.css">
+    <link rel="stylesheet" href="../style/resultat.css">
+   
+   
+</head>
+
+<!--Tableau du classement Joueurs-->
+
+
+<body>
+      
+
+
+
+
+    <!--Recherche-->
+<section class="container mt-5">
+
+    <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+            <label for="recherche" class="col-form-label m-2" style="text-align: right;">Rechercher<i
+                    class="bi bi-search m-1"></i></label>
+                </div>
+        <div class="col-md-auto">
+            <input type="text" class="form-control m-2" id="recherche" name="recherche">
+        </div>
+        <div class="col-md-auto">
+            <button id="bt_find" type="submit" id="find" class="btn btn-dark m-2">Rechercher</button>
+        </div>
+    </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    <!--Tableau du classement-->
+    
+    <section class="container mt-5">
+        <table class="table table-light table-striped">
+            <thead>
+                <tr>
+                    
+                    
+                    <th scope="col">Rang<i class="m-1"></i></th>
+                    
+                    <th scope="col">Points<i class="m-1"></i></th>
+
+                <th scope="col">Joueurs<i class="m-1"></i></th>
+
+                <th scope="col">Club<i class="bi bi-journal-bookmark m-1"></i></th>
+
+                <th scope="col">Match</th>
+
+                <th scope="col">Pays<i class="bi bi-person-fill m-1"></i></th>
+                
+                <!---->  <th scope="col">
+                    <img src="../img/icons8-modifier.svg" alt="modifier" />
+                </th>
+                <th scope="col">
+                    <img src="../img/poubelle.svg" alt="supprimer" />
+                </th>
+
+            </tr>
+        </thead>
+
+        <tbody id="list_classement"></tbody>
+
+    </table>
+</section>
+
+
+<!--Formulaire-version legère-->
+<form id="fileToUpload">
+
+<label for="Rang">Rang</label>
+<input type="text" id="Rang" pattern=".{3,}" required />
+
+<label for="Points">Points</label>
+<input type="text" id="Points" pattern=".{3,}" required />
+
+<label for="Joueurs">Joueurs</label>
+<input type="text" id="Joueurs" pattern=".{3,}" required />
+
+<label for="Club">Club</label>
+<input type="text" id="Club" pattern=".{3,}" required />
+
+<label for="Pays">Pays</label>
+<input type="text" id="Pays" pattern=".{3,}" required />
+
+<label for="Match">Match</label>
+<input type="text" id="Match" pattern=".{3,}" required />
+</form>
+<!--Fin-Formulaire-->
+
+
+<!--Validation--> 
+
+        <div class="d-flex justify-content-center">
+            <button id="valider" type="button" class="btn btn-dark m-1">
+                Valider
+            </button>
+            <button id="annuler" type="button" class="btn btn-dark m-1">
+                Annuler
+            </button>
+        </div>
+
+    </section>
+
+    
+    
+    <!--Sauvegarder-->
+    
+<section class="container mt-5">
+    <div class="d-flex justify-content-center m-2">
+        <input type="file" id="fileToUpload" value="Import">
+        <label for="fileToUpload" type="button" class="btn btn-dark m-1">
+            Récupérer
+        </label>
+        <button id="save" type="button" class="btn btn-dark m-1">
+            Sauvegarder
+        </button>
+    </div>
+</section>
+
+<script type="text/javascript" src="../javaScript/classement_J.js"></script>
+
+</body>
+
+
