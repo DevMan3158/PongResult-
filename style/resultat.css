@@ -5,6 +5,7 @@ h4
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 25px;
+    color: #333333;
 
 }
 
@@ -19,7 +20,7 @@ h4
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: solid black;
+   /* border: solid black;*/
     margin: 50px 0px 50px 0px;
 }
 
@@ -61,30 +62,44 @@ th
 
 td
 {
-    border: solid 1px #14265456;
+    border: solid 1px #ffffff1e;
     background-color: #142654d0 ;
     color: #ffffff;
     margin: 0px 15px 0px 15px ;
     padding: 0px 20px 0px 20px ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 2px;
 }
+
+
+td:hover
+{
+    border: solid 1px #142654;
+    background-color: #142654f8 ;
+    border-radius: 2px;
+    
+}
+
 
 
 
 label
 {
-    border: solid 1px #14265456;
+    /*border: solid 1px #14265456;*/
     margin: 0px 0px 0px 0px ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
 }
 
 
-
+/* Voir boutton interférence*/
 button
 {
   
     border: solid 1px #14265456;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 5px;
+    border-radius: 5px;
 }
 
 
@@ -98,5 +113,6 @@ input
     border: solid 1px #14265456;
     margin: 20px 0px 20px 0px ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 15%;
 }
 

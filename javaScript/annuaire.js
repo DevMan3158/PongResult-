@@ -2,6 +2,7 @@ let numberList = 0;
 let listData = [];
 let id = -1;
 
+
 function addRow(data) {
     return '<tr id="annuaire_'+data.id+'">'+
     //'<td class="id">'+data.id+'</td>'+
@@ -277,3 +278,4 @@ document.getElementById("bt_find").addEventListener("click", function(e) {
 document.getElementById('fileToUpload').addEventListener('change', loadFiles);
 
 loadLocal();
+
