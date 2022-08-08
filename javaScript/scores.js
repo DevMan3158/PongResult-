@@ -41,11 +41,11 @@ let myChart = new Chart(graph, {
         label: "Score",
         data: [215, 212, 156, 132, 129],
         backgroundColor: [
-          "purple",
-          "red",
-          "pink",
-          "orange",
-          "yellow",
+            "#132552",
+            "red",
+            "yellow",
+            "orange",
+            "pink",
         ],
         hoverBorderWidth: 30,
       },
@@ -57,8 +57,15 @@ let myChart = new Chart(graph, {
       text: "Les 5 joueurs au podium",
       fontSize: 25,
     },
+    options:{
+        title: {
+            display: true,
+            text: "Les 5 joueurs au podium",
+            fontSize: 20,
+        },
     legend: {
-      display: false,
+        display: true,
+    }   
     }
   }
 });
