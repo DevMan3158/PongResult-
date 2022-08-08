@@ -6,7 +6,6 @@ function addRow(data) {
     return '<tr id="annuaire_'+data.id+'">'+
     //'<td class="id">'+data.id+'</td>'+
 
-    
 
    '<td class="tournoi">'+data.tournoi+'</td>'+
     '<td class="date">'+data.date+'</td>'+
