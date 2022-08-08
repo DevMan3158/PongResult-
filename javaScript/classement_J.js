@@ -1,11 +1,11 @@
-let numberList = 0;
-let listData = [];
-let id = -1;
+let numberList_class = 0;
+let listData_class = [];
+let id_class = -1;
 
 
 function addRow(data) {
-    return '<tr id="annuaire_classement_'+data.id+'">'+
-    //'<td class="id">'+data.id+'</td>'+
+    return '<tr id_class="annuaire_classement_'+data.id_class+'">'+
+    //'<td class="id_class">'+data.id_class+'</td>'+
 
     
 
@@ -25,7 +25,7 @@ function addRow(data) {
 function addRowData(number, Rang, Points, Joueurs, Club, Match, Pays) {
 
     return {
-        "id" : number,
+        "id_class" : number,
         "number" : number,
         "Rang" : Rang,
         "Points" : Points,
@@ -42,10 +42,10 @@ function addRowData(number, Rang, Points, Joueurs, Club, Match, Pays) {
 function addEventAll() {
     document.querySelectorAll(".modif").forEach(element => {
         element.addEventListener("click", function(e) {
-            id = parseInt(document.getElementById(this.parentNode.parentNode.id).id.split("_")[1]);
-            let myIndex = rechercheKey(id);
+            id_class = parseInt(document.getElementById(this.parentNode.parentNode.id_class).id_class.split("_")[1]);
+            let myIndex = rechercheKey(id_class);
             if (myIndex !== -1) {
-                let data = listData[myIndex];
+                let data = listData_class[myIndex];
                 document.getElementById("Rang").value = data.Rang;
                 document.getElementById("Points").value = data.Points;
                 document.getElementById("Joueurs").value = data.Joueurs;
@@ -61,19 +61,19 @@ function addEventAll() {
 
     document.querySelectorAll(".delete").forEach(element => {
         element.addEventListener("click", function(e) {
-            let id = parseInt(document.getElementById(this.parentNode.parentNode.id).id.split("_")[1]);
+            let id_class = parseInt(document.getElementById(this.parentNode.parentNode.id_class).id_class.split("_")[1]);
             let Joueurs = "";
             let Rang = "";
-            let myIndex = rechercheKey(id);
+            let myIndex = rechercheKey(id_class);
             if (myIndex !== -1) {
-                let data = listData[myIndex];
+                let data = listData_class[myIndex];
                 Joueurs = data.Joueurs;
                 Rang = data.Rang;
             }
             if(confirm("Attention vous allez supprimer '"+Joueurs+" "+Rang+"'. 'Ok' pour continuer.")) {
-                let myIndex = rechercheKey(id);
+                let myIndex = rechercheKey(id_class);
                 if (myIndex !== -1) {
-                    listData.splice(myIndex, 1);
+                    listData_class.splice(myIndex, 1);
                     addValueTab();
                 }
             }
@@ -94,9 +94,9 @@ function annulerDef() {
     document.getElementById("Joueurs").value = ""
 }
 
-function rechercheKey(id) {
-    for (let index = 0; index < listData.length; index++) {
-        if(listData[index].id == id) {
+function rechercheKey(id_class) {
+    for (let index = 0; index < listData_class.length; index++) {
+        if(listData_class[index].id_class == id_class) {
             return index
         }
     }
@@ -111,7 +111,7 @@ function findTab() {
     let list_classement = document.getElementById("list_classement");
     list_classement.innerHTML = "";
     if(find == "") {
-        listData.forEach(element => {
+        listData_class.forEach(element => {
             list_classement.innerHTML += addRow(element);
         });
     } else {
@@ -146,14 +146,14 @@ document.getElementById("valider").addEventListener("click", function(e) {
 
     if(Joueurs.trim() != "" && Rang.trim() != "") {
 
-        if(id < 0) {
-            listData.push(addRowData(numberList, Rang, Points, Joueurs, Club, Match, Pays));
-            numberList++;
+        if(id_class < 0) {
+            listData_class.push(addRowData(numberList_class, Rang, Points, Joueurs, Club, Match, Pays));
+            numberList_class++;
         } else {
-            listData[rechercheKey(id)] = addRowData(id, Rang, Points, Joueurs, Club, Match, Pays);
+            listData_class[rechercheKey(id_class)] = addRowData(id_class, Rang, Points, Joueurs, Club, Match, Pays);
         }
 
-        id = -1;
+        id_class = -1;
 
         addValueTab();
 
@@ -167,7 +167,7 @@ document.getElementById("valider").addEventListener("click", function(e) {
 function saveLocal() {
     let values = {
         "number" : numberList,
-        "listData" : listData,
+        "listData_class" : listData_class,
 
     }
     localStorage.setItem('annuaire_classement', JSON.stringify(values));
@@ -180,8 +180,8 @@ function loadLocal() {
     if(annuaire_classement !== undefined && annuaire_classement != "") {
         let values = JSON.parse(annuaire_classement);
         if(values != undefined && values != "") {
-            numberList = values.number;
-            listData = values.listData;
+            numberList_class = values.number;
+            listData_class = values.listData_class;
             addValueTab();
         }
     }
@@ -195,7 +195,7 @@ function saveFile() {
     let name_file = "new_file_" + Date.now() + ".json";
     let values = {
         "number" : numberList,
-        "listData" : listData,
+        "listData_class" : listData_class,
     }
     var blob = new Blob([JSON.stringify(values)], { type: "text" });
     const blobUrl = URL.createObjectURL(blob);
@@ -219,8 +219,8 @@ function loadFiles(event) {
   
     fr.onload = function(e) {
     var result = JSON.parse(e.target.result);
-    numberList = result.number;
-    listData = result.listData;
+    numberList_class = result.number;
+    listData_class = result.listData_class;
     addValueTab();
   }
   
@@ -230,7 +230,7 @@ function loadFiles(event) {
 
 function listFind(find) {
     let values = [];
-    listData.forEach(element => {
+    listData_class.forEach(element => {
         if(
             element.Rang.toLowerCase().includes(find.toLowerCase()) ||
             element.Points.toLowerCase().includes(find.toLowerCase()) ||
