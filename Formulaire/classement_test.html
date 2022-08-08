@@ -1,6 +1,7 @@
 
     <link rel="stylesheet" href="../style/normalizer.css">
     <link rel="stylesheet" href="../style/resultat.css">
+    <link rel="stylesheet" href="../style/style.css">
    
    
 </head>
@@ -10,26 +11,18 @@
 
 <body>
       
+    <h4>Classement Mondial</h4>
+<!--Recherche-->
 
+<div class="ContRecherche">
 
+    <label for="recherche">Rechercher</label>
 
+    <input type="text" id="recherche" name="recherche">
 
-    <!--Recherche-->
-<section class="container mt-5">
+    <button id="bt_find" type="submit" id="find">Rechercher</button>
 
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-            <label for="recherche" class="col-form-label m-2" style="text-align: right;">Rechercher<i
-                    class="bi bi-search m-1"></i></label>
-                </div>
-        <div class="col-md-auto">
-            <input type="text" class="form-control m-2" id="recherche" name="recherche">
-        </div>
-        <div class="col-md-auto">
-            <button id="bt_find" type="submit" id="find" class="btn btn-dark m-2">Rechercher</button>
-        </div>
-    </div>
-    </section>
+</div>
     
     
     
@@ -72,58 +65,26 @@
 </section>
 
 
-<!--Formulaire-version legère-->
-<form id="fileToUpload">
 
-<label for="Rang">Rang</label>
-<input type="text" id="Rang" pattern=".{3,}" required />
-
-<label for="Points">Points</label>
-<input type="text" id="Points" pattern=".{3,}" required />
-
-<label for="Joueurs">Joueurs</label>
-<input type="text" id="Joueurs" pattern=".{3,}" required />
-
-<label for="Club">Club</label>
-<input type="text" id="Club" pattern=".{3,}" required />
-
-<label for="Pays">Pays</label>
-<input type="text" id="Pays" pattern=".{3,}" required />
-
-<label for="Match">Match</label>
-<input type="text" id="Match" pattern=".{3,}" required />
-</form>
-<!--Fin-Formulaire-->
 
 
 <!--Validation--> 
 
-        <div class="d-flex justify-content-center">
-            <button id="valider" type="button" class="btn btn-dark m-1">
-                Valider
-            </button>
-            <button id="annuler" type="button" class="btn btn-dark m-1">
-                Annuler
-            </button>
-        </div>
+<div class="ContRecherche">
+    <input type="file" id="fileToUpload" value="Import">
+    <label for="fileToUpload" type="button">
+        Récupérer
+    </label>
+    <button id="save" type="button">
+        Sauvegarder
+    </button>
+</div>
 
-    </section>
 
-    
-    
-    <!--Sauvegarder-->
-    
-<section class="container mt-5">
-    <div class="d-flex justify-content-center m-2">
-        <input type="file" id="fileToUpload" value="Import">
-        <label for="fileToUpload" type="button" class="btn btn-dark m-1">
-            Récupérer
-        </label>
-        <button id="save" type="button" class="btn btn-dark m-1">
-            Sauvegarder
-        </button>
-    </div>
-</section>
+<button id="valider" type="button"><!--valider--></button>
+
+<button id="annuler" type="button"><!--annuler--></button>
+
 
 <script type="text/javascript" src="../javaScript/classement_J.js"></script>
 

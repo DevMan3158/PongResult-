@@ -2,15 +2,22 @@
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/normalizer.css">
     <link rel="stylesheet" href="../style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />    
 
+
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="../javaScript/jquery.js"></script>-->
     <title>PongResult</title>
 </head>
 
@@ -19,9 +26,11 @@
 
 <body>
 
+
     <header>
         <a href="../index.html">
-        <h1>PongResult</h1></a>
+            <h1>PongResult</h1>
+        </a>
         <img src="../img/pexels-josh-sorenson-976873(1).jpg" alt="">
 
     </header>
@@ -39,25 +48,36 @@
 
     </div>
 
- <h4 class="text-center p-3 bg-light">
-        <i class="bi bi-journal-text mt-5"></i>Administration 
+    <h4 class="text-center p-3 m-5 bg-light">
+        <i class="bi bi-journal-text mt-5"></i>Administration
     </h4>
 
-    <!--Recherche-->
+<!---->
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Édition Résultats Matchs</a></li>
+            <li><a href="#tabs-2">Édition Classement Joueurs</a></li>
+            <li><a href="#tabs-3">Édition Statistiques</a></li>
+        </ul>
+
+
+
+        <div id="tabs-1">
+                <!--Recherche-->
     <section class="container mt-5">
 
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-            <label for="recherche" class="col-form-label m-2" style="text-align: right;">Rechercher<i
-                    class="bi bi-search m-1"></i></label>
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <label for="recherche" class="col-form-label m-2" style="text-align: right;">Rechercher<i
+                        class="bi bi-search m-1"></i></label>
+            </div>
+            <div class="col-md-auto">
+                <input type="text" class="form-control m-2" id="recherche" name="recherche">
+            </div>
+            <div class="col-md-auto">
+                <button id="bt_find" type="submit" id="find" class="btn btn-dark m-2">Rechercher</button>
+            </div>
         </div>
-        <div class="col-md-auto">
-            <input type="text" class="form-control m-2" id="recherche" name="recherche">
-        </div>
-        <div class="col-md-auto">
-            <button id="bt_find" type="submit" id="find" class="btn btn-dark m-2">Rechercher</button>
-        </div>
-    </div>
     </section>
 
     <!--Tableau du classement-->
@@ -73,11 +93,11 @@
 
                     <th scope="col">Type<i class="m-1"></i></th>
 
-                    <th scope="col">Nom<i class="bi bi-journal-bookmark m-1"></i></th>
+                    <th scope="col">Joueur A<i class="bi bi-person-fill m-1"></i></th>
 
                     <th scope="col">Match</th>
 
-                    <th scope="col">Prénom<i class="bi bi-person-fill m-1"></i></th>
+                    <th scope="col">Joueur B<i class="bi bi-person-fill m-1"></i></th>
 
                     <th scope="col">Club<i class="bi bi-people m-1"></i></th>
 
@@ -91,7 +111,8 @@
                     <th scope="col">Score<i class="bi bi-trophy m-1"></i></th>
 
 
-                  <!---->  <th scope="col">
+                    <!---->
+                    <th scope="col">
                         <img src="../img/icons8-modifier.svg" alt="modifier" />
                     </th>
                     <th scope="col">
@@ -109,7 +130,7 @@
 
 
 
-<!--Formulaire-version legère
+    <!--Formulaire-version legère
 
     <label for="tournoi">Tournoi</label>
     <input type="text" id="tournoi" pattern=".{3,}" required />
@@ -147,17 +168,59 @@
     <label for="score">Score</label>
     <input type="text" id="score" pattern=".{3,}" required />-->
 
-<!--Fin-Formulaire-->
+    <!--Fin-Formulaire-->
 
 
     <!--Formulaire-->
     <section class="container mt-5">
 
+
         <div class="mb-3 row">
             <label for="tournoi" class="col-sm-2 col-form-label">Tournoi<i class="bi bi-journal-bookmark m-1"></i>
             </label>
             <div class="col-sm-10">
-                <input type="text" id="tournoi" pattern=".{3,}" class="form-control" required />
+
+                <select class="form-select" id="tournoi" pattern=".{3,}" aria-label="Floating label select example">
+
+                    <option selected>Selectionner le type de tournoi :</option>
+                    <option id="tournoi">Challenger Series</option>
+                    <option id="tournoi">Championnat d'Europe</option>
+                    <option id="tournoi">Championnat d'Europe par équipes </option>
+                    <option id="tournoi">Jeux olympiques</option>
+                    <option id="tournoi">Championnats du monde individuel </option>
+                    <option id="tournoi">Championnat du monde par équipes </option>
+                    <option id="tournoi">Coupe du monde </option>
+                    <option id="tournoi">Coupe du monde par équipes</option>
+                    <option id="tournoi">Pro-Tour </option>
+                    <option id="tournoi">Jeux européens </option>
+                    <option id="tournoi">Jeux européens par équipes </option>
+                    <option id="tournoi">Championnats de France</option>
+
+                </select>
+
+                <input type="text" id="tournoi" pattern=".{3,}" class="form-control" required placeholder="Autre" />
+                <!-- <input type="text" id="tournoi" pattern=".{3,}" class="form-control" required />-->
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="type" class="col-sm-2 col-form-label">Type<i class="bi bi-journal-bookmark m-1"></i>
+            </label>
+
+            <div class="col-sm-10">
+
+                <select class="form-select" id="type" pattern=".{3,}" aria-label="Floating label select example">
+
+                    <option selected>Selectionner une phase : </option>
+                    <option id="type">Huitièmes de finale </option>
+                    <option id="type">Quarts-de-finale</option>
+                    <option id="type">Demi-finales </option>
+                    <option id="type">Finale </option>
+
+                </select>
+
+                <input type="text" id="type" pattern=".{3,}" class="form-control" required placeholder="Autre" />
+
             </div>
         </div>
 
@@ -165,55 +228,61 @@
             <label for="date" class="col-sm-2 col-form-label">Date<i class="bi bi-journal-bookmark m-1"></i>
             </label>
             <div class="col-sm-10">
-                <input type="text" id="date" pattern=".{3,}" class="form-control" required />
+                <input type="date" id="date" pattern=".{3,}" class="form-control" required />
             </div>
         </div>
 
         <div class="mb-3 row">
-            <label for="type" class="col-sm-2 col-form-label">Type<i class="bi bi-journal-bookmark m-1"></i>
+            <label for="name" class="col-sm-2 col-form-label">Joueur A<i class="bi bi-person-fill  m-1"></i>
             </label>
             <div class="col-sm-10">
-                <input type="text" id="type" pattern=".{3,}" class="form-control" required />
+                <input type="text" id="name" pattern=".{3,}" class="form-control" required
+                    placeholder="Ex : Nom et Prénom du gagnant" />
             </div>
         </div>
-
 
         <div class="mb-3 row">
-            <label for="name" class="col-sm-2 col-form-label">Nom<i class="bi bi-journal-bookmark m-1"></i>
-            </label>
+            <label for="firstname" class="col-sm-2 col-form-label">Joueur B<i class="bi bi-person-fill m-1"></i></label>
             <div class="col-sm-10">
-                <input type="text" id="name" pattern=".{3,}" class="form-control" required />
+                <input type="text" id="firstname" pattern=".{3,}" class="form-control" required
+                    placeholder="Ex : Nom et Prénom du perdant" />
             </div>
         </div>
-
 
         <div class="mb-3 row">
             <label for="Bat" class="col-sm-2 col-form-label">Match<i class="bi bi-journal-bookmark m-1"></i>
             </label>
+
             <div class="col-sm-10">
-                <input type="text" id="Bat" pattern=".{3,}" class="form-control" required />
+
+                <select type="text" class="form-select" id="Bat" pattern=".{3,}"
+                    aria-label="Floating label select example" required placeholder="Issue du Match">
+
+                <option selected>Issue du match :</option>
+                <option type="text" id="Bat">Bat</option>
+                <option type="text" id="Bat">Perd</option>
+                <option type="text" id="Bat">Égalité</option>
+
+                </select>
+                
             </div>
         </div>
 
-        <div class="mb-3 row">
-            <label for="firstname" class="col-sm-2 col-form-label">Prénom<i class="bi bi-person-fill m-1"></i></label>
-            <div class="col-sm-10">
-                <input type="text" id="firstname" pattern=".{3,}" class="form-control" required />
-            </div>
-        </div>
 
         <div class="mb-3 row">
             <label for="sexe" class="col-sm-2 col-form-label">Sexe<i class="bi bi-signpost-fill m-1"></i>
             </label>
             <div class="col-sm-10">
-                <input type="text" id="sexe" pattern=".{3,}" class="form-control" required />
+                <input type="text" id="sexe" pattern=".{3,}" class="form-control" required
+                    placeholder="Ex : Féminin - Masculin" />
             </div>
         </div>
 
         <div class="mb-3 row">
             <label for="club" class="col-sm-2 col-form-label">Club<i class="bi bi-people m-1"></i></label>
             <div class="col-sm-10">
-                <input type="text" id="club" pattern=".{3,}" class="form-control" required />
+                <input type="text" id="club" pattern=".{3,}" class="form-control" required
+                    placeholder="Ex : Club Gagnant / Perdant" />
             </div>
         </div>
 
@@ -221,14 +290,15 @@
             <label for="pays" class="col-sm-2 col-form-label">Pays<i class="bi bi-flag m-1"></i>
             </label>
             <div class="col-sm-10">
-                <input type="text" id="pays" pattern=".{3,}" class="form-control" required />
+                <input type="text" id="pays" pattern=".{3,}" class="form-control" required
+                    placeholder="Ex : Japon / Chine" />
             </div>
         </div>
 
         <div class="mb-3 row">
             <label for="duree" class="col-sm-2 col-form-label">Durée<i class="bi bi-stopwatch-fill m-1"></i></label>
             <div class="col-sm-10">
-                <input type="text" id="duree" pattern=".{3,}" class="form-control" required />
+                <input type="time" id="duree" pattern=".{3,}" class="form-control" required />
             </div>
         </div>
 
@@ -236,19 +306,19 @@
             <label for="prolongation" class="col-sm-2 col-form-label">Prolongation<i class="bi bi-stopwatch m-1"></i><i
                     class="bi bi-stopwatch m-1"></i></label>
             <div class="col-sm-10">
-                <input type="text" id="prolongation" pattern=".{3,}" class="form-control" required />
+                <input type="time" id="prolongation" pattern=".{3,}" class="form-control" required />
             </div>
         </div>
 
         <div class="mb-3 row">
             <label for="score" class="col-sm-2 col-form-label">Score<i class="bi bi-trophy m-1"></i></label>
             <div class="col-sm-10">
-                <input type="text" id="score" pattern=".{3,}" class="form-control" required />
+                <input type="text" id="score" pattern=".{3,}" class="form-control" required placeholder="Ex : 3-1" />
             </div>
         </div>
 
 
-       <!--Validation--> 
+        <!--Validation-->
 
         <div class="d-flex justify-content-center">
             <button id="valider" type="button" class="btn btn-dark m-1">
@@ -263,26 +333,40 @@
 
 
 
-<!--Sauvegarder-->
+    <!--Sauvegarder-->
 
-<section class="container mt-5">
-    <div class="d-flex justify-content-center m-2">
-        <input type="file" id="fileToUpload" value="Import">
-        <label for="fileToUpload" type="button" class="btn btn-dark m-1">
-            Récupérer
-        </label>
-        <button id="save" type="button" class="btn btn-dark m-1">
-            Sauvegarder
-        </button>
-    </div>
-</section>
+    <section class="container mt-5">
+        <div class="d-flex justify-content-center m-2">
+            <input type="file" id="fileToUpload" value="Import">
+            <label for="fileToUpload" type="button" class="btn btn-dark m-1">
+                Récupérer
+            </label>
+            <button id="save" type="button" class="btn btn-dark m-1">
+                Sauvegarder
+            </button>
+        </div>
+    </section>
+        </div>
+
+            <div id="tabs-2">
+                
+            </div>
+            <div id="tabs-3">
+            </div>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-<script src="/javaScript/annuaire.js"></script>
+    <script type="text/javascript" src="../javaScript/script.js" defer></script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+            integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="../javaScript/annuaire.js"></script>
 
 
     <body>
