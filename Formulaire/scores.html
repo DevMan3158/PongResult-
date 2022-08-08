@@ -20,12 +20,20 @@
         </ul>
 
 
-    
+
+
 
         <div id="tabs-1">
 
 
-            <h2> Détail des scores par joueur </h2>
+            <!--Message-->
+            <div class="messagedefilant">
+                <div id="fondFilant" data-text=" &nbsp; Les 5 joueurs au podium - - -&nbsp; ">
+                    <span id="span">
+                        &nbsp; Les 5 joueurs au podium - - - &nbsp;
+                    </span>
+                </div>
+            </div>
 
             <canvas id="graph"></canvas>
 
@@ -39,7 +47,7 @@
                         <button id="b2" value="submit">Visible</button>
                     </div>
 
-                  
+
 
                     <table id="ScoreJoueurA">
                         <thead>
@@ -78,7 +86,7 @@
 
                     </table>
 
-                    
+
                     <table id="ScoreJoueurB">
 
                         <tr id="jB">
@@ -107,41 +115,40 @@
 
             </div>
 
-            
+
         </div>
 
 
-        
-            <div id="tabs-2">
-                <div id="Res"></div>
-            </div>
 
-            <div id="tabs-3">
-                <div id="class"></div>
-            </div>
-            
+        <div id="tabs-2">
+            <div id="Res"></div>
+        </div>
+
+        <div id="tabs-3">
+            <div id="class"></div>
+        </div>
+
     </div>
-        
-
-      <script>
-            $(function () {
-                $("#Res").load("../Formulaire/Resultats.html");
-            });
 
 
-            $(function () {
-                $("#class").load("../Formulaire/classement_test.html");
-            });
+    <script>
+        $(function () {
+            $("#Res").load("../Formulaire/Resultats.html");
+        });
 
-     </script>
 
-  
-      
-        <script type="text/javascript" src="../javaScript/scores.js" defer></script>
+        $(function () {
+            $("#class").load("../Formulaire/classement_test.html");
+        });
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
-            integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </script>
+
+
+
+    <script type="text/javascript" src="../javaScript/scores.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
-
