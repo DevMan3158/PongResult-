@@ -1,10 +1,36 @@
-/*POLICES*/
-.canva
-{
-    width: 800px; 
-    height: 600px;
+/* ---------- */
+/* Responsive */
+/* ---------- */
+
+/* Ordinateur */
+
+@media (max-width: 1600px) {
 
 }
+
+@media (max-width: 1200px) {
+
+}
+
+/* Tablette */
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+/* Mobile */
+
+@media (max-width: 656px) {
+
+    .container_footer
+        
+    
+  /*POLICES*/
+
 
 
 
@@ -73,7 +99,7 @@ body
 .TopBandHead
 {
     width: 100%;
-    height: 25px;
+    height: 20px;
     background-color: #333333;
     border-bottom: #f1f1f186 1px solid;
 }
@@ -84,7 +110,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 150px;
+    height: 120px;
     /*border: solid;*/
     background-color: #142654;
     margin: 0px 0px 0px 0px;
@@ -96,11 +122,11 @@ header {
 {
     display: flex;
     flex-direction: row;
-    align-items: right;
+    align-items: center;
     justify-content: center;
     width: 100%;
-    height: 50px;
-    margin: 0px 0px 50px 0px;
+    height: 60px;
+    margin: 10px 0px 20px 0px;
   /*  border-right: solid 1px rgba(0, 0, 0, 0.404);*/
    /* border-left: solid 1px rgba(0, 0, 0, 0.404);*/
     border-bottom: solid 1px rgba(0, 0, 0, 0.404);
@@ -110,9 +136,9 @@ nav
 {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
    /* border: solid black 1px ; */
-    width: 80%;
+    width: 100%;
 }
 
 ul
@@ -130,7 +156,8 @@ li{
     /*margin: 0px 10px 0px 10px ;*/
     padding: 0px 10px 0px 10px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    border-right: solid 1px black;
+    font-size: 11px;
+    border-right: solid 1px rgba(0, 0, 0, 0);
     list-style: none;
 }
 
@@ -145,7 +172,7 @@ li{
     align-items: center;
    /*border: solid 1px black;*/
    width: 100%; 
-   margin: 0px 0px 50px 0px ;
+   margin: 0px 0px 20px 0px ;
 }
 
 
@@ -153,13 +180,13 @@ li{
     display: flex;
     flex-direction: row;
    /* border: solid 1px rgb(255, 0, 0);*/
-    width: 80%; 
+    width: 100%; 
 }
 
 .retouchSvg
 {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     opacity: 1;
 }
 
@@ -174,76 +201,51 @@ li{
 .ContenairSec1
 {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    align-items: none;
     justify-content: center;
+    flex-direction:column;
     width: 100%;
-    /* border: solid 1px rgb(255, 0, 0);*/
+     border: solid 1px rgb(0, 38, 255);
 }
 
 .Cont1 {
     position: relative;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    height: 70vh;
+    flex-direction: wrap;
+    align-items: none;
+    width: 100%;
+    height: auto;
    /* border: solid 1px rgb(255, 255, 255);*/
     background-color: #142654;
-    margin: 0px 0px 25px 0px;
+    margin: 0px 0px 0px 0px;
     box-shadow: 2px 4px 12px 1px rgba(0, 0, 0, 0.719);
 
-    /*border: solid 2px rgb(255, 0, 0);*/
+   /* border: solid 2px rgb(255, 0, 0);*/
 }
 
 .ContDéfilement
 {
     position: absolute;
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    bottom: 15px;
-    width: 80%;
-    height: 20px;
-   /* border: solid 2px rgb(255, 0, 0);*/
+
+    display: none;
+
 }
 
-.Défilement
-{
-    margin: 0px 20px 0px 20px ;
-    width: 10%;
-    height: 5px;
-    background-color:#f1f1f170;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.Défilement:hover
-{
-    margin: 0px 20px 0px 20px ;
-    width: 10%;
-    height: 5px;
-    background-color:#FC3234;
-}
 
 .ContCardAccueil 
 {  
     display: flex;
     justify-content: center;
+    flex-direction: column;
+
     align-items: center;
-    justify-content: center;
-    width: 30%;
-    height: 70%;
+    width: 100%;
+    height: 350px;
     border: solid 0.5px rgba(255, 255, 255, 0.192);
     border-top: solid 0.5px rgba(255, 255, 255, 0);
     border-bottom: solid 0.5px rgba(255, 255, 255, 0);
     transition: 1s;
-    margin: 0px 25px 0px 0px ;
+    margin: 20px 0px 20px 0px ;
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
     border-top-left-radius: 0%;
@@ -257,11 +259,11 @@ li{
 {  
     display: flex;
     justify-content: center;
-    width: 25%;
-    height: 50%;
+    width: 100%;
+    height: 350px;
     border: solid 0.5px rgba(255, 255, 255, 0.192);
     background-color: rgba(0, 0, 0, 0.4);
-    margin: 0px 20px 0px 20px ;
+    margin: 30px 0px 30px 0px ;
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
     border-top-left-radius: 0%;
@@ -312,7 +314,7 @@ a:hover
 flex-direction: row;
 justify-content: center;
 align-items: center;
-    width: 80%;
+    width: 100%;
     height: 50px;
     background-color: #142654;
 }
@@ -339,8 +341,8 @@ margin: 0px 0px 0px 0px;
 .retoucheImgPong
 {
     
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     transition: 0.9s;
     filter: drop-shadow(24px 14px 5px rgba(0, 0, 0, 0.788));
 
@@ -349,8 +351,8 @@ margin: 0px 0px 0px 0px;
 .retoucheImgPong:hover
 {
     filter: drop-shadow(24px 14px 5px rgba(0, 0, 0, 0));
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     -webkit-animation: rotate-diagonal-2 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse both;
 	        animation: rotate-diagonal-2 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse both;
 }
@@ -360,6 +362,8 @@ margin: 0px 0px 0px 0px;
     
     width: 35px;
     height: 35px;
+    margin: 0px 0px 15px 0px ;
+    padding: 3px 3px 3px 3px;
     transition: 0.3s;
     filter: drop-shadow(40px 15px 6px rgba(0, 0, 0, 0.301));
 }
@@ -380,19 +384,19 @@ margin: 0px 0px 0px 0px;
 .ContenairSec2
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;   
     justify-content: center;
-    margin: 0px 0px 130px 0px;
+    margin: 0px 0px 50px 0px;
 }
 
 .ContCardActualité
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;   
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
 
     /*border: solid black;*/
 
@@ -427,8 +431,9 @@ margin: 0px 0px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
-    height: 250px;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 200px;
     border: solid 1px black;
     background-image: url(/img/pexels-madison-inouye-1577882.jpg);
     background-size: cover;
@@ -443,8 +448,9 @@ margin: 0px 0px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
-    height: 250px;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 200px;
     border: solid 1px black;
     background-image: url(/img/pexels-joshua-miranda-4027658.jpg);
     background-size: cover;
@@ -459,8 +465,9 @@ margin: 0px 0px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
-    height: 250px;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 200px;
     border: solid 1px black;
     background-image: url(/img/pexels-sevenstorm-juhaszimrus-704767\(1\).jpg);
     background-size: cover;
@@ -475,8 +482,9 @@ margin: 0px 0px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
-    height: 250px;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 200px;
     border: solid 1px black;
     background-image: url(/img/pexels-seanpaul-mckee-11557176.jpg);
     background-size: cover;
@@ -513,11 +521,12 @@ margin: 0px 0px 0px 0px;
 footer
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 25px 0px 0px 0px ;
+    margin: 25px 0px 25px 0px ;
     width: 100%;
-    height: 200px;
+    height: auto;
     border: solid 1px rgb(255, 255, 255);
     background-color: #F1F1F1;
     filter: drop-shadow(3px 2px 4px rgba(0, 0, 0, 0.445));
@@ -526,16 +535,18 @@ footer
 .ContFoot
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 20%;
-    height: 125px;
+    margin: 15px 0px 5px 0px ;
+    width: 100%;
+    height: auto;
     border-bottom: solid 1px rgba(0, 0, 0, 0.185);
 }
 
 p{
     width: 100%;
+    margin: 15px 0px 20px 0px ;
     text-align: center;
     letter-spacing: 2px;
     color: #333333;
@@ -592,7 +603,7 @@ p{
 .spanP
 {
     text-align: center;
-    font-size: 15px;
+    font-size: 10px;
     letter-spacing: 1px;
     color: #333333;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -605,7 +616,7 @@ p{
 dialog
 {
     border: solid rgba(0, 0, 0, 0.267) 1px;
-    width: 30%;
+    width: 100%;
     height: 70vh;
     background-color: #f1f1f1e8;
     border-radius: 4%;
@@ -629,17 +640,16 @@ form
 label
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
-    margin: 20px 0px 20px 0px;
+    margin: 10px 0px 10px 0px;
     /*border: solid rgb(255, 230, 0) 1px;*/
 }
 
 select
 {
-    width: 40%;
+    width: 50%;
     
    /* border: solid rgb(43, 255, 0) 1px;*/
 }
@@ -648,6 +658,7 @@ menu
 {
     display: flex;
     justify-content: space-around;
+    padding: 0px 0px 0px 0px;
     /*border: solid rgb(255, 0, 212) 1px;*/
 }
 
@@ -659,8 +670,8 @@ button
     cursor: pointer;
 
     text-align: center;
-    font-size: 13px;
-    letter-spacing: 1px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
     color: #333333;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
@@ -668,17 +679,20 @@ button
 
 .spanBTN
 {
-    border-radius: 15px;
-    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    padding: 3px 3px 3px 3px;
     border: solid 2px #142654;
 }
 
 .spanBTN:hover
 {
-    border-radius: 15px;
-    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    padding: 3px 3px 3px 3px;
     border: solid 2px #1426547a;
 }
 
 
  /*---FIN---MODAL--*/
+    
+
+    }
