@@ -1,0 +1,145 @@
+/*POLICES*/
+
+h4
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: #333333;
+
+}
+
+/*FIN-POLICES*/
+
+
+
+
+.ContRecherche
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   /* border: solid black;*/
+    margin: 50px 0px 50px 0px;
+}
+
+
+table
+{
+    /*: solid black;*/
+    margin: 100px 0px 100px 0px;
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 20px 0px 20px ;
+    filter: drop-shadow(3px 2px 4px rgba(0, 0, 0, 0.445));
+}
+
+
+
+tr
+{
+    /*border: solid rgb(0, 0, 0);*/
+    background-color: #f1f1f1;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+
+th
+{
+    /*border: solid 1px #142654a1;*/
+    background-color: #f1f1f1;
+    color: #222222;
+    margin: 0px 15px 0px 15px ;
+    padding: 0px 20px 0px 20px ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+td
+{
+    border: solid 1px #ffffff1e;
+    background-color: #142654d0 ;
+    color: #ffffff;
+    margin: 0px 15px 0px 15px ;
+    padding: 0px 20px 0px 20px ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 2px;
+}
+
+
+td:hover
+{
+    border: solid 1px #142654;
+    background-color: #142654f8 ;
+    border-radius: 2px;
+    
+}
+
+
+#spanScore
+{
+filter: blur(4px);
+transition: 0.5s;
+}
+
+
+#spanScore:hover
+{
+filter: blur(0px);
+}
+
+label
+{
+    /*border: solid 1px #14265456;*/
+    margin: 0px 0px 0px 0px ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+
+
+/* Voir boutton interférence*/
+button
+{
+  
+    border: solid 1px #14265456;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+
+
+input
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px #14265456;
+    margin: 20px 0px 20px 0px ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 15%;
+}
+
+
+.spanModif
+{
+
+    opacity: 0;
+    transition: 1s;
+}
+
+
+.spanModif:hover
+{
+   
+    opacity: 1;
+}

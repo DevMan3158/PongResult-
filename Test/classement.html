@@ -1,0 +1,87 @@
+
+    <link rel="stylesheet" href="pongresult.css">
+    <link rel="stylesheet" href="../style/normalizer.css">
+    <link rel="stylesheet" href="../style/resultat.css">
+   
+   
+    <script type="text/javascript" src="javaScript/pongresult.js" defer></script>
+</head>
+
+<!--Formulaire-version legère
+<label for="tournoi">Tournoi</label>
+<input type="text" id="tournoi" pattern=".{3,}" required />
+<label for="date">Date</label>
+<input type="text" id="date" pattern=".{3,}" required />
+<label for="type">Type</label>
+<input type="text" id="type" pattern=".{3,}" required />
+<label for="name">Nom</label>
+<input type="text" id="name" pattern=".{3,}" required />
+<label for="Bat">Match</label>
+<input type="text" id="Bat" pattern=".{3,}" required />
+<label for="firstname">Prénom</label>
+<input type="text" id="firstname" pattern=".{3,}" required />
+<label for="sexe">Sexe</label>
+<input type="text" id="sexe" pattern=".{3,}" required />
+<label for="club">Club</label>
+<input type="text" id="club" pattern=".{3,}" required />
+<label for="pays">Pays</label>
+<input type="text" id="pays" pattern=".{3,}" required />
+<label for="duree">Durée</label>
+<input type="text" id="duree" pattern=".{3,}" required />
+<label for="prolongation">Prolongation></label>
+<input type="text" id="prolongation" pattern=".{3,}" required />
+<label for="score">Score</label>
+<input type="text" id="score" pattern=".{3,}" required />-->
+<!--Fin-Formulaire-->
+
+<body id="body">
+      
+
+    <div class="container">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th> &nbsp; Rang &nbsp; </th>
+                    <th> &nbsp; Classement officiel &nbsp; </th>
+                    <th> &nbsp; Points &nbsp; </th>
+                    <th> &nbsp; Joueur &nbsp; </th>
+                    <th> &nbsp; Club &nbsp; </th>
+                    <th> &nbsp; Pays &nbsp; </th>
+                </tr>
+            </thead>
+              
+            <form id="formulAjout" name="formulaire" onsubmit="AddElement(event);">                
+                    <td>
+                        <label class="rang" for="ajoutrang"></label>
+                        <input type="text" id="ajoutrang" name="ajouterrang">
+                    </td>
+                    <td>
+                        <label class="classementO" for="ajoutclassementO"></label>
+                        <input type="text" id="ajoutclassementO" name="ajouterclassementO">
+                    </td>
+                    <td>
+                        <label class="points" for="ajoutpoints"></label>
+                        <input type="text" id="ajoutpoints" name="ajouterpoints">
+                    </td>
+                    <td>
+                        <label class="joueur" for="ajoutjoueur"></label>
+                        <input type="text" id="ajoutjoueur" name="ajouterjoueur">
+                    </td>
+                    <td>
+                        <label class="club" for="ajoutclub"></label>
+                        <input type="text" id="ajoutclub" name="ajouterclub">
+                    </td>
+                    <td>
+                        <label class="pays" for="ajoutpays"></label>
+                        <input type="text" id="ajoutpays" name="ajouterpays">
+                    </td>
+        
+                    <td>
+                        <button id="bouton" value="submit" >Ajouter</button>
+                    </td>           
+            </form>
+           
+        </table>
+    </div>
+    
+</body>

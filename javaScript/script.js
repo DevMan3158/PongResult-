@@ -1,0 +1,5 @@
+//Onglets
+
+$(function() {
+  $("#tabs").tabs();
+} );

@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="../style/normalizer.css">
+<link rel="stylesheet" href="../style/style.css">
+<link rel="stylesheet" href="../style/resultat.css">
+<link rel="stylesheet" href="../style/MediaQueries.css">
+
+<!--Test-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<!--Test-->
+
+<!--Fichier sans formulaire, sert à l'affichage du tableau seulement-->
+
+<h4>Résultat des matchs</h4>
+
+<!--Recherche-->
+
+<div class="ContRecherche">
+
+    <label for="recherche">Rechercher</label>
+
+    <input type="text" id="recherche" name="recherche">
+
+    <button id="bt_find" type="submit" id="find">Rechercher</button>
+
+</div>
+
+<!--Fin-Recherche-->
+
+
+<table>
+
+    <thead>
+
+        <tr>
+
+            <th>Tournoi</th>
+
+            <th>Date</th>
+
+            <th>Type</th>
+
+            <th>Nom</th>
+
+            <th>Match</th>
+
+            <th>Prénom</th>
+
+            <th>Club</th>
+
+            <th>Pays</th>
+
+            <th>Durée</th>
+
+            <th>Prolongation</th>
+
+            <th>Score</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody id="list_annuaire"></tbody>
+
+</table>
+
+<!--Fin-Tableau-du-classement-->
+
+<!--Sauvegarder-->
+
+<div class="ContRecherche">
+    <input type="file" id="fileToUpload" value="Import">
+    <label for="fileToUpload" type="button">
+        Récupérer
+    </label>
+    <button id="save" type="button">
+        Sauvegarder
+    </button>
+</div>
+
+
+<button id="valider" type="button"><!--valider--></button>
+
+<button id="annuler" type="button"><!--annuler--></button>
+
+<!--Fin-Sauvegarder-->
+
+<script src="../javaScript/annuaire.js"></script>
+
+
+<!--Test-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+    integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--Test-->
