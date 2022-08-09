@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="../style/scores.css" rel="stylesheet">
 <link rel="stylesheet" href="../style/normalizer.css">
+<link rel="stylesheet" href="../style/MediaQueries.css">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -16,7 +17,7 @@
         <ul>
             <li><a href="#tabs-1">Classement</a></li>
             <li><a href="#tabs-2">Classement Match</a></li>
-            <li><a href="#tabs-3">Classement Individuel</a></li>
+            <li><a href="#tabs-3">Classement Mondial</a></li>
         </ul>
 
 
@@ -26,11 +27,12 @@
         <div id="tabs-1">
 
 
-            <!--Message-->
+            <!--Message-Défilant-->
+
             <div class="messagedefilant">
-                <div id="fondFilant" data-text=" &nbsp; Les 5 joueurs au podium - - -&nbsp; ">
+                <div id="fondFilant" data-text="Les 5 joueurs au podium - - -">
                     <span id="span">
-                        &nbsp; Les 5 joueurs au podium - - - &nbsp;
+                       Les 5 joueurs au podium - - - 
                     </span>
                 </div>
             </div>
@@ -42,8 +44,8 @@
                 <table>
 
                     <div>
-                        &nbsp;&nbsp;<button id="bouton" value="submit">Ajouter</button>&nbsp;
-                        <button id="b1" value="submit">Flouter</button>&nbsp;
+                        <button id="bouton" value="submit">Ajouter</button>
+                        <button id="b1" value="submit">Flouter</button>
                         <button id="b2" value="submit">Visible</button>
                     </div>
 
@@ -74,12 +76,12 @@
                                 <form
                                     oninput="resultJoueurA.value=parseInt(set4.value)+parseInt(set3.value)+parseInt(set2.value)+parseInt(set1.value)">
                                     &nbsp;
-                                    set4<input type="number" id="set4" name="set4" placeholder="set4" />&nbsp;
-                                    set3<input type="number" id="set3" name="set3" placeholder="set3" />&nbsp;
-                                    set2<input type="number" id="set2" name="set2" placeholder="set2" />&nbsp;
+                                    set4<input type="number" id="set4" name="set4" placeholder="set4" />
+                                    set3<input type="number" id="set3" name="set3" placeholder="set3" />
+                                    set2<input type="number" id="set2" name="set2" placeholder="set2" />
                                     set1<input type="number" id="set1" name="set1" placeholder="set1" />
-                                    &nbsp; = &nbsp; <output name="resultJoueurA"
-                                        placeholder="totalJoueur"></output>&nbsp;&nbsp;
+                                     =  
+                                     <output name="resultJoueurA" placeholder="totalJoueur"></output>
                                 </form>
                             </td>
                         </tr>
@@ -93,19 +95,20 @@
 
                             <td>
                                 <label class="nomJoueur" for="joueurB"></label>
-                                JoueurB <input type="text" id="joueurB" name="joueurA" placeholder="Joueur">
+                                JoueurB 
+                                <input type="text" id="joueurB" name="joueurA" placeholder="Joueur">
                             </td>
 
                             <td>
                                 <form
                                     oninput="resultJoueurB.value=parseInt(set4.value)+parseInt(set3.value)+parseInt(set2.value)+parseInt(set1.value)">
-                                    &nbsp;
-                                    set4<input type="number" name="set4" placeholder="set4" />&nbsp;
-                                    set3<input type="number" name="set3" placeholder="set3" />&nbsp;
-                                    set2<input type="number" name="set2" placeholder="set2" />&nbsp;
-                                    set1<input type="number" name="set1" placeholder="set1" />&nbsp;
-                                    &nbsp; = &nbsp; <output name="resultJoueurB"
-                                        placeholder="totalJoueur"></output>&nbsp;&nbsp;
+                                   
+                                    set4<input type="number" name="set4" placeholder="set4" />
+                                    set3<input type="number" name="set3" placeholder="set3" />
+                                    set2<input type="number" name="set2" placeholder="set2" />
+                                    set1<input type="number" name="set1" placeholder="set1" />
+                                    =
+                                     <output name="resultJoueurB" placeholder="totalJoueur"></output>
                                 </form>
                             </td>
                         </tr>
@@ -145,7 +148,7 @@
 
 
 
-    <script type="text/javascript" src="../javaScript/scores.js" defer></script>
+    <script type="text/javascript" src="../javaScript/scores.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
         integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="

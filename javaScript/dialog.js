@@ -23,6 +23,7 @@ selectEl.addEventListener('change', function onSelect(e) {
   confirmBtn.value = selectEl.value;
 });
 
+localStorage.selectEl
 
 // Le bouton "Confirmer" du formulaire déclenche la fermeture
 // de la boîte de dialogue en raison de [method="dialog"]

@@ -60,6 +60,9 @@ th
 
 
 
+
+
+
 td
 {
     border: solid 1px #ffffff1e;
@@ -81,7 +84,17 @@ td:hover
 }
 
 
+#spanScore
+{
+filter: blur(4px);
+transition: 0.5s;
+}
 
+
+#spanScore:hover
+{
+filter: blur(0px);
+}
 
 label
 {
@@ -116,3 +129,17 @@ input
     width: 15%;
 }
 
+
+.spanModif
+{
+
+    opacity: 0;
+    transition: 1s;
+}
+
+
+.spanModif:hover
+{
+   
+    opacity: 1;
+}
