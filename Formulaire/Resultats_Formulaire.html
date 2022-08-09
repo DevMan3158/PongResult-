@@ -6,21 +6,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../style/normalizer.css">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />    
 
 
-<!--
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-<script src="../javaScript/jquery.js"></script>-->
+    <!---->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../javaScript/jquery.js"></script>
+
     <title>PongResult</title>
 </head>
-
 
 
 
@@ -54,17 +57,18 @@
 
 <!---->
     <div id="tabs">
-        <ul>
-            <li><a href="#tabs-1">Édition Résultats Matchs</a></li>
-            <li><a href="#tabs-2">Édition Classement Joueurs</a></li>
-            <li><a href="#tabs-3">Édition Statistiques</a></li>
-        </ul>
-
-
 
         <div id="tabs-1">
+
+            <ul>
+                <li><a href="#tabs-1">Édition Résultats Matchs</a></li>
+                <li><a href="../Formulaire/classement_test_Formulaire.html">Édition Classement Joueurs</a></li>
+                <li><a href="#tabs-3">Édition Statistiques</a></li>
+            </ul>
+
+
                 <!--Recherche-->
-    <section class="container mt-5">
+                <section class="container mt-5">
 
         <div class="row justify-content-md-center">
             <div class="col-md-auto">
@@ -78,12 +82,13 @@
                 <button id="bt_find" type="submit" id="find" class="btn btn-dark m-2">Rechercher</button>
             </div>
         </div>
-    </section>
+                </section>
 
-    <!--Tableau du classement-->
-    <section class="container mt-5">
-        <table class="table table-light table-striped">
-            <thead>
+                <!--Tableau du classement-->
+                <section class="container mt-5">
+                    <table class="table table-light table-striped">
+
+                        <thead>
                 <tr>
 
 
@@ -103,7 +108,7 @@
 
                     <th scope="col">Pays<i class="bi bi-flag m-1"></i></th>
 
-                    <th scope="col">Durée<i class="bi bi-stopwatch m-1"></i></th>
+                    <th scope="col">Durée - Min/s<i class="bi bi-stopwatch m-1"></i></th>
 
                     <th scope="col">Prolongation<i class="bi bi-stopwatch-fill m-1"></i><i
                             class="bi bi-stopwatch-fill m-1"></i></th>
@@ -113,69 +118,25 @@
 
                     <!---->
                     <th scope="col">
-                        <img src="../img/icons8-modifier.svg" alt="modifier" />
+                        <img src="" alt="modifier" />
                     </th>
                     <th scope="col">
-                        <img src="../img/poubelle.svg" alt="supprimer" />
+                        <img src="" alt="supprimer" />
                     </th>
 
                 </tr>
-            </thead>
+                        </thead>
+                    
+                        <tbody id="list_annuaire"></tbody>
 
-            <tbody id="list_annuaire"></tbody>
-
-        </table>
-    </section>
-
-
-
-
-    <!--Formulaire-version legère
-
-    <label for="tournoi">Tournoi</label>
-    <input type="text" id="tournoi" pattern=".{3,}" required />
-
-    <label for="date">Date</label>
-    <input type="text" id="date" pattern=".{3,}" required />
-
-    <label for="type">Type</label>
-    <input type="text" id="type" pattern=".{3,}" required />
-
-    <label for="name">Nom</label>
-    <input type="text" id="name" pattern=".{3,}" required />
-
-    <label for="Bat">Match</label>
-    <input type="text" id="Bat" pattern=".{3,}" required />
-
-    <label for="firstname">Prénom</label>
-    <input type="text" id="firstname" pattern=".{3,}" required />
-
-    <label for="sexe">Sexe</label>
-    <input type="text" id="sexe" pattern=".{3,}" required />
-
-    <label for="club">Club</label>
-    <input type="text" id="club" pattern=".{3,}" required />
-
-    <label for="pays">Pays</label>
-    <input type="text" id="pays" pattern=".{3,}" required />
-
-    <label for="duree">Durée</label>
-    <input type="text" id="duree" pattern=".{3,}" required />
-
-    <label for="prolongation">Prolongation></label>
-    <input type="text" id="prolongation" pattern=".{3,}" required />
-
-    <label for="score">Score</label>
-    <input type="text" id="score" pattern=".{3,}" required />-->
-
-    <!--Fin-Formulaire-->
+                    </table>
+                </section>
+            
+                <!--Formulaire-->
+                <section class="container mt-5">
 
 
-    <!--Formulaire-->
-    <section class="container mt-5">
-
-
-        <div class="mb-3 row">
+                        <div class="mb-3 row">
             <label for="tournoi" class="col-sm-2 col-form-label">Tournoi<i class="bi bi-journal-bookmark m-1"></i>
             </label>
             <div class="col-sm-10">
@@ -201,9 +162,9 @@
                 <input type="text" id="tournoi" pattern=".{3,}" class="form-control" required placeholder="Autre" />
                 <!-- <input type="text" id="tournoi" pattern=".{3,}" class="form-control" required />-->
             </div>
-        </div>
-
-        <div class="mb-3 row">
+                        </div>
+                    
+                        <div class="mb-3 row">
             <label for="type" class="col-sm-2 col-form-label">Type<i class="bi bi-journal-bookmark m-1"></i>
             </label>
 
@@ -222,34 +183,34 @@
                 <input type="text" id="type" pattern=".{3,}" class="form-control" required placeholder="Autre" />
 
             </div>
-        </div>
-
-        <div class="mb-3 row">
+                        </div>
+                    
+                        <div class="mb-3 row">
             <label for="date" class="col-sm-2 col-form-label">Date<i class="bi bi-journal-bookmark m-1"></i>
             </label>
             <div class="col-sm-10">
                 <input type="date" id="date" pattern=".{3,}" class="form-control" required />
             </div>
-        </div>
-
-        <div class="mb-3 row">
+                        </div>
+                    
+                        <div class="mb-3 row">
             <label for="name" class="col-sm-2 col-form-label">Joueur A<i class="bi bi-person-fill  m-1"></i>
             </label>
             <div class="col-sm-10">
                 <input type="text" id="name" pattern=".{3,}" class="form-control" required
                     placeholder="Ex : Nom et Prénom du gagnant" />
             </div>
-        </div>
-
-        <div class="mb-3 row">
+                        </div>
+                    
+                        <div class="mb-3 row">
             <label for="firstname" class="col-sm-2 col-form-label">Joueur B<i class="bi bi-person-fill m-1"></i></label>
             <div class="col-sm-10">
                 <input type="text" id="firstname" pattern=".{3,}" class="form-control" required
                     placeholder="Ex : Nom et Prénom du perdant" />
             </div>
-        </div>
-
-        <div class="mb-3 row">
+                        </div>
+                    
+                        <div class="mb-3 row">
             <label for="Bat" class="col-sm-2 col-form-label">Match<i class="bi bi-journal-bookmark m-1"></i>
             </label>
 
@@ -266,107 +227,130 @@
                 </select>
                 
             </div>
-        </div>
-
-
-        <div class="mb-3 row">
-            <label for="sexe" class="col-sm-2 col-form-label">Sexe<i class="bi bi-signpost-fill m-1"></i>
+                        </div>
+                    
+                        <div class="mb-3 row">
+            <label for="sexe" class="col-sm-2 col-form-label">Sexe
             </label>
             <div class="col-sm-10">
                 <input type="text" id="sexe" pattern=".{3,}" class="form-control" required
                     placeholder="Ex : Féminin - Masculin" />
             </div>
-        </div>
-
-        <div class="mb-3 row">
+                        </div>
+                    
+                        <div class="mb-3 row">
             <label for="club" class="col-sm-2 col-form-label">Club<i class="bi bi-people m-1"></i></label>
             <div class="col-sm-10">
                 <input type="text" id="club" pattern=".{3,}" class="form-control" required
                     placeholder="Ex : Club Gagnant / Perdant" />
             </div>
-        </div>
-
-        <div class="mb-3 row">
+                        </div>
+                    
+                        <div class="mb-3 row">
             <label for="pays" class="col-sm-2 col-form-label">Pays<i class="bi bi-flag m-1"></i>
             </label>
             <div class="col-sm-10">
                 <input type="text" id="pays" pattern=".{3,}" class="form-control" required
                     placeholder="Ex : Japon / Chine" />
             </div>
-        </div>
-
-        <div class="mb-3 row">
+                        </div>
+                    
+                        <div class="mb-3 row">
             <label for="duree" class="col-sm-2 col-form-label">Durée<i class="bi bi-stopwatch-fill m-1"></i></label>
             <div class="col-sm-10">
                 <input type="time" id="duree" pattern=".{3,}" class="form-control" required />
             </div>
-        </div>
-
-        <div class="mb-3 row">
+                        </div>
+                    
+                        <div class="mb-3 row">
             <label for="prolongation" class="col-sm-2 col-form-label">Prolongation<i class="bi bi-stopwatch m-1"></i><i
                     class="bi bi-stopwatch m-1"></i></label>
             <div class="col-sm-10">
                 <input type="time" id="prolongation" pattern=".{3,}" class="form-control" required />
             </div>
-        </div>
-
-        <div class="mb-3 row">
+                        </div>
+                    
+                        <div class="mb-3 row">
             <label for="score" class="col-sm-2 col-form-label">Score<i class="bi bi-trophy m-1"></i></label>
             <div class="col-sm-10">
                 <input type="text" id="score" pattern=".{3,}" class="form-control" required placeholder="Ex : 3-1" />
             </div>
+                        </div>
+                    
+                    
+                        <!--Validation-->
+                    
+                        <div class="d-flex justify-content-center">
+                <button id="valider" type="button" class="btn btn-dark m-1">
+                    Valider
+                </button>
+                <button id="annuler" type="button" class="btn btn-dark m-1">
+                    Annuler
+                </button>
+                        </div>
+
+                </section>
+
+                <!--Sauvegarder-->
+                <section class="container mt-5">
+                    <div class="d-flex justify-content-center m-2">
+                        <input type="file" id="fileToUpload" value="Import">
+                        <label for="fileToUpload" type="button" class="btn btn-dark m-1">
+                            Récupérer
+                        </label>
+                        <button id="save" type="button" class="btn btn-dark m-1">
+                        Sauvegarder
+                        </button>
+                    </div>
+                </section>
+
         </div>
 
-
-        <!--Validation-->
-
-        <div class="d-flex justify-content-center">
-            <button id="valider" type="button" class="btn btn-dark m-1">
-                Valider
-            </button>
-            <button id="annuler" type="button" class="btn btn-dark m-1">
-                Annuler
-            </button>
+        <div id="tabs-2">
+            <div id="Class_Form"></div>
         </div>
 
-    </section>
-
-
-
-    <!--Sauvegarder-->
-
-    <section class="container mt-5">
-        <div class="d-flex justify-content-center m-2">
-            <input type="file" id="fileToUpload" value="Import">
-            <label for="fileToUpload" type="button" class="btn btn-dark m-1">
-                Récupérer
-            </label>
-            <button id="save" type="button" class="btn btn-dark m-1">
-                Sauvegarder
-            </button>
+        <div id="tabs-3">
+            <div id=""></div>
         </div>
-    </section>
-        </div>
+    
+    </div>
 
-            <div id="tabs-2">
-                
-            </div>
-            <div id="tabs-3">
-            </div>
+    <script>
+
+        //Appel du contenue 
+
+        $(function () {
+            $("Class_Form").load("../Formulaire/classement_test_Formulaire.html");
+        });
+
+         //Appel de la page 
+
+       /* $(function () {
+            $("#Class_Stats").load("./pages/Acc.html");
+        }); */
+    
+
+    </script>
 
 
 
-    <script type="text/javascript" src="../javaScript/script.js" defer></script>
 
-        
+    <script src="../javaScript/annuaire.js"></script>
+
+    <script type="text/javascript" src="../javaScript/script.js"></script>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
             integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-    <script src="../javaScript/annuaire.js"></script>
+
+    
 
 
     <body>

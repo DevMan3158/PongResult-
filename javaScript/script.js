@@ -1,5 +1,5 @@
-/*onglets*/
-$( function() {
-    $( "#tabs" ).tabs();
-  } );
-  
+//Onglets
+
+$(function() {
+  $("#tabs").tabs();
+} );

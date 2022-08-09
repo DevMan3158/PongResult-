@@ -4,7 +4,7 @@ let id_class = -1;
 
 
 function addRow(data) {
-    return '<tr id_class="annuaire_classement_'+data.id_class+'">'+
+    return '<tr id_class="annuaireClassement_'+data.id_class+'">'+
     //'<td class="id_class">'+data.id_class+'</td>'+
 
     
@@ -17,8 +17,8 @@ function addRow(data) {
     '<td class="Pays">'+data.Pays+'</td>'+
 
 
-    '<th scope="col"><img src="./img/icons8-modifier.svg" class="modif" alt="modifier" /></th>'+
-    '<th scope="col"><img src="./img/poubelle.svg" class="delete" alt="supprimer" /></th>'+
+    /*'<th scope="col"><img src="./img/icons8-modifier.svg" class="modif" alt="modifier" /></th>'+
+    '<th scope="col"><img src="./img/poubelle.svg" class="delete" alt="supprimer" /></th>'+*/
     '</tr>';
 }
 
@@ -42,8 +42,8 @@ function addRowData(number, Rang, Points, Joueurs, Club, Match, Pays) {
 function addEventAll() {
     document.querySelectorAll(".modif").forEach(element => {
         element.addEventListener("click", function(e) {
-            id_class = parseInt(document.getElementById(this.parentNode.parentNode.id_class).id_class.split("_")[1]);
-            let myIndex = rechercheKey(id_class);
+            id_class = parseInt(document.getElementById(this.parentNode.parentNode.id).id.split("_")[1]);
+            let myIndex = rechercheKey(id);
             if (myIndex !== -1) {
                 let data = listData_class[myIndex];
                 document.getElementById("Rang").value = data.Rang;
@@ -61,7 +61,7 @@ function addEventAll() {
 
     document.querySelectorAll(".delete").forEach(element => {
         element.addEventListener("click", function(e) {
-            let id_class = parseInt(document.getElementById(this.parentNode.parentNode.id_class).id_class.split("_")[1]);
+            let id_class = parseInt(document.getElementById(this.parentNode.parentNode.id).id.split("_")[1]);
             let Joueurs = "";
             let Rang = "";
             let myIndex = rechercheKey(id_class);
@@ -166,7 +166,7 @@ document.getElementById("valider").addEventListener("click", function(e) {
 
 function saveLocal() {
     let values = {
-        "number" : numberList,
+        "number" : numberList_class,
         "listData_class" : listData_class,
 
     }
@@ -192,9 +192,9 @@ sauvegarde de la page cree dans le back office
 */
 
 function saveFile() {
-    let name_file = "new_file_" + Date.now() + ".json";
+    let name_file = "new_file_classement_" + Date.now() + ".json";
     let values = {
-        "number" : numberList,
+        "number" : numberList_class,
         "listData_class" : listData_class,
     }
     var blob = new Blob([JSON.stringify(values)], { type: "text" });
